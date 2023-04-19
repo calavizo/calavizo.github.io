@@ -1,92 +1,91 @@
-<html>
-    <head>
-        <title>Calavi</title>
-    </head>
-    <header>
-        <div class="titre"> 
-            <h3>Calavi<span>Zo</span></h3>
-            <input type="search" placeholder="Search here">
-            <button type="submit">Search</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuiny</title>
+</head>
+<body>
+    <nav>
+            <!-- style entete -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        nav{
+            height: 80px;
+            width: 100%;
+            background: rgb(1, 1, 5);
+        }
+    </style>
+        <div class="box1">
+            <h2>Kui<span>ny</span></h2>
+            <input type="search" placeholder="Research here...">
+            <button for="input">Search</button>
         </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">History</a></li>
-                    <li><a href="">Documents</a></li>
-                    <li><a href="">About us</a></li>
-                </ul>
-            </nav>
+        <!-- style box1 -->
+        <style>
+            .box1{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            h2{
+                margin-right: 100px;
+                font-weight: bold;
+                font-size: 35px;
+                color: rgb(245, 245, 245);
+            }
+            span{
+                font-weight: bold;
+                font-size: 35px;
+                color: rgb(0, 177, 0); 
+            }
+            input{
+                padding: 0 20px;
+                border-bottom-left-radius: 10px;
+                border: none;
+                width: 80vh;
+                height: 30px;
+            }
+            button{
+                padding: 0 10px;
+                border: none;
+                border-top-right-radius: 10px;
+                height: 30px;
+                background-color: rgb(109, 182, 0);
+            }
+        </style>
+        <div class="box2">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Histoire</a></li>
+                <li><a href="">Documents</a></li>
+                <li><a href="">Rencontre</a></li>
+                <li><a href="">Suivre</a></li>
+                <li><a href="">Aides</a></li>
+            </ul>
         </div>
-    </header>
+        <!-- style box2 -->
+        <style>
+            .box2{
+                display: flex;
+                justify-content: center;
+            }
+            ul li{
+                padding: 10px;
+                display: inline-block;
+                list-style: none;
+            }
+            ul li a{
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </nav>
+</body>
 </html>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: monospace;
-        text-decoration: none;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    header{
-        align-items: center;
-        margin: 0 auto;
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 80px;
-        background: rgb(0, 59, 95);
-    }
-    .titre{
-        display: flex;
-        align-items: center;
-    }
-    .menu ul{
-        margin: 0 10px;
-        align-items: center;
-        display: flex;
-    }
-    .titre h3,input,button{
-        margin: 0 10px;
-    }
-    .titre h3{
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .titre h3 span{
-        font-weight: bold;
-        font-size: 20px;
-        color: red;
-    }
-    .titre input{
-        outline: none;
-        border: none;
-        padding: 0 10px;
-        border-bottom-left-radius: 10px;
-        height: 20px;
-        width: 20vh;
-    }
-    .titre button{
-        cursor: pointer;
-        border: none;
-        padding: 0 5px;
-        margin: 0 -10px;
-        border-top-right-radius: 10px;
-        height: 20px;
-        background-color: red;
-    }
-    .menu ul li a{
-        cursor: pointer;
-        font-size: 15px;
-        font-weight: bold;
-        color: white;
-        padding: 10px;
-    }
-    .menu ul li a:hover{
-        transition: .7s ease-in-out;
-        color: rgb(252, 0, 0);
-    }
-</style>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="R.jpg" width="55px" height="55px"><a href="" class="titre">CALAVI ZODEMIN</a><em>La communauté calavi <br>calavizodemin@</em></div>
+        <div class="menu"><input type="checkbox" id="btn"><label for="btn" class="checkbtn"><ion-icon name="reorder-four-outline"></ion-icon></label> <ul><li><a href="">HOME</a></li><li><a href="">HISTORY</a></li><li><a href="">FOLLOW US</a></li><li><a href="">CONTACT</a></li></ul></div>
+    </header>
+    <!-- feuille de style header -->
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; list-style: none; text-decoration: none;
+        }
+        header{
+            position: relative; margin: 0 auto; background: rgb(2, 2, 2); align-items: center; display: flex; height: 70px; justify-content: space-between;
+        }
+        header .logo{
+            padding: 5px; display: block;
+        }
+        .logo img{
+            cursor: pointer; margin-right: 10px; border-radius: 30px; float: left;
+        }
+        .logo .titre{
+            font-size: 20px; font-weight: bold; color: rgb(209, 209, 209); cursor: pointer;
+        }
+        .logo em{
+            display: block; color: rgb(207, 211, 204); cursor: pointer; text-align: center;
+        }
+        header .menu ul{ 
+            display: flex; padding: 5px;
+        }
+        .menu ul li{
+            margin: 0 auto; padding: 10px;
+        }
+        .menu ul li a{
+            font-weight: bold; font-size: 15px; color: rgb(209, 209, 209); cursor: pointer; transition: .7s;
+        }
+        .checkbtn{
+        color: white; font-size: 30px; line-height: 80px; margin-right: 20px; cursor: pointer; display: none;
+    }
+    #btn{
+        display: none;
+    }
+    @media (max-width: 858px) {
+        .checkbtn{
+            display: block;
+        }
+        .logo{
+            margin-left: 17vh;
+        }
+        .menu ul{
+            background: rgb(15, 14, 14); position: fixed; width: 100%; height: 10vh; top: 70px; left: -100%; transition: all .5s; align-items: center; display: block;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
+    </style>
+</body>
+</html>

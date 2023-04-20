@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuiny</title>
+    <title>Calavi</title>
 </head>
 <body>
     <nav>
@@ -17,6 +17,7 @@
             text-decoration: none;
         }
         nav{
+            margin: 0 auto;
             position: relative;
             height: 68px;
             width: 100%;
@@ -24,19 +25,21 @@
         }
     </style>
         <div class="box1">
-            <h2>Kui<span>ny</span></h2>
+            <h2>Calavi<span>Zo</span></h2>
             <input type="search" placeholder="Research here...">
             <button for="input">Search</button>
         </div>
         <!-- style box1 -->
         <style>
             .box1{
+                margin: 0 auto;
                 width: 100%;
                 justify-content: center;
                 align-items: center;
                 display: flex;
             }
             h2{
+                cursor: pointer;
                 margin-right: 10px;
                 font-weight: bold;
                 font-size: 35px;
@@ -53,8 +56,10 @@
                 border: none;
                 width: 30vh;
                 height: 30px;
+                outline: none;
             }
             button{
+                cursor: pointer;
                 padding: 0 10px;
                 border: none;
                 border-top-right-radius: 10px;
@@ -64,18 +69,20 @@
         </style>
         <div class="box2">
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Histoire</a></li>
-                <li><a href="">Documents</a></li>
-                <li><a href="">Rencontre</a></li>
-                <li><a href="">Aides</a></li>
+                <li><a href="index.html" target="_parent">Accueil</a></li>
+                <li><a href="" target="_parent">Histoire</a></li>
+                <li><a href="" target="_parent">Documents</a></li>
+                <li><a href="" target="_parent">Rencontre</a></li>
+                <li><a href="" target="_parent">Aides</a></li>
             </ul>
         </div>
         <!-- style box2 -->
         <style>
             .box2{
+                margin: 0 auto;
                 width: 100%;
                 display: flex;
+                align-items: center;
                 justify-content: center;
             }
             ul li{
@@ -83,9 +90,20 @@
                 display: inline-block;
                 list-style: none;
             }
+            ul li:hover{
+                border-top-right-radius: 10px;
+                transition: .7s ease;
+                background-color: rgb(255, 255, 255);
+            }
             ul li a{
+                cursor: pointer;
+                margin: 0 auto;
                 color: white;
                 font-weight: bold;
+            }
+            ul li a:hover{
+                transition: all .7s ease-in-out;
+                color: rgb(109, 182, 0);
             }
         </style>
     </nav>

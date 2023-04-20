@@ -1,116 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calavi</title>
+    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <nav>
-            <!-- style entete -->
+    <header>
+        <div class="logo"><img src="R.jpg" width="55px" height="55px"><a href="" class="titre">CALAVI ZODEMIN</a><em>La communauté calavi <br>calavizodemin@</em></div>
+        <div class="menu"><input type="checkbox" id="btn"><label for="btn" class="checkbtn"><ion-icon name="reorder-four-outline"></ion-icon></label> <ul><li><a href="">HOME</a></li><li><a href="">HISTORY</a></li><li><a href="">FOLLOW US</a></li><li><a href="">CONTACT</a></li></ul></div>
+    </header>
+    <!-- feuille de style header -->
     <style>
         *{
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-            text-decoration: none;
+            margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; list-style: none; text-decoration: none;
         }
-        nav{
-            margin: 0 auto;
-            position: relative;
-            height: 68px;
-            width: 100%;
-            background: rgb(1, 1, 5);
+        header{
+            position: relative; margin: 0 auto; background: rgb(2, 2, 2); align-items: center; display: flex; height: 70px; justify-content: space-between;
         }
+        header .logo{
+            padding: 5px; display: block;
+        }
+        .logo img{
+            cursor: pointer; margin-right: 10px; border-radius: 30px; float: left;
+        }
+        .logo .titre{
+            font-size: 20px; font-weight: bold; color: rgb(209, 209, 209); cursor: pointer;
+        }
+        .logo em{
+            display: block; color: rgb(207, 211, 204); cursor: pointer; text-align: center;
+        }
+        header .menu ul{ 
+            display: flex; padding: 5px;
+        }
+        .menu ul li{
+            margin: 0 auto; padding: 10px;
+        }
+        .menu ul li a{
+            font-weight: bold; font-size: 15px; color: rgb(209, 209, 209); cursor: pointer; transition: .7s;
+        }
+        .checkbtn{
+        color: white; font-size: 30px; line-height: 80px; margin-right: 20px; cursor: pointer; display: none;
+    }
+    #btn{
+        display: none;
+    }
+    @media (max-width: 858px) {
+        .checkbtn{
+            display: block;
+        }
+        .logo{
+            margin-left: 17vh;
+        }
+        .menu ul{
+            background: rgb(15, 14, 14); position: fixed; width: 100%; height: 10vh; top: 70px; left: -100%; transition: all .5s; align-items: center; display: block;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
     </style>
-        <div class="box1">
-            <h2>Calavi<span>Zo</span></h2>
-            <div class="box3">
-                <input type="search" placeholder="Research here...">
-                <button for="input">Search</button>
-            </div>
-            <!-- style box3 -->
-            <style>
-                .box3{
-                    width: 100%;
-                    justify-content: center;
-                }
-                input{
-                padding: 0 20px;
-                border-bottom-left-radius: 10px;
-                border: none;
-                width: 25vh;
-                height: 30px;
-                outline: none;
-            }
-            button{
-                margin-left: -10px;
-                cursor: pointer;
-                padding: 0 5px;
-                border: none;
-                border-top-right-radius: 10px;
-                height: 30px;
-                background-color: rgb(109, 182, 0);
-            }
-            </style>
-        </div>
-        <!-- style box1 -->
-        <style>
-            .box1{
-                margin: 0 auto;
-                width: 100%;
-                justify-content: space-around;
-                align-items: center;
-                display: flex;
-            }
-            h2{
-                cursor: pointer;
-                margin: 0 10px;
-                font-weight: bold;
-                font-size: 35px;
-                color: rgb(245, 245, 245);
-            }
-            span{
-                font-weight: bold;
-                font-size: 35px;
-                color: rgb(0, 177, 0); 
-            }
-        </style>
-        <div class="box2">
-            <ul>
-                <li><a href="index.html" target="_parent">Accueil</a></li>
-                <li><a href="histoire.html" target="_parent">Histoire</a></li>
-                <li><a href="document.html" target="_parent">Documents</a></li>
-                <li><a href="meeting.html" target="_parent">Rencontre</a></li>
-                <li><a href="aide.html" target="_parent">Aides</a></li>
-            </ul>
-        </div>
-        <!-- style box2 -->
-        <style>
-            .box2{
-                margin: 0 auto;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            ul li{
-                padding: 2px;
-                display: inline-block;
-                list-style: none;
-            }
-            ul li a{
-                cursor: pointer;
-                margin: 0 auto;
-                color: white;
-                font-weight: bold;
-            }
-            ul li a:hover{
-                transition: all .7s ease-in-out;
-                color: rgb(109, 182, 0);
-            }
-        </style>
-    </nav>
 </body>
 </html>

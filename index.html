@@ -1,155 +1,328 @@
-<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Calavi Zodemin</title><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title></title>
 </head>
-<body>
+<html>
     <header>
-        <div class="logo"><img src="R.jpg" width="55px" height="55px"><a href="index.html" class="titre">CALAVI ZODEMIN</a><em>La communauté calavi <br>zodemin au Congo</em></div>
-        <div class="menu"><input type="checkbox" id="btn"><label for="btn" class="checkbtn"><ion-icon name="reorder-four-outline"></ion-icon></label> <ul><li><a href="index.html" target="_parent">HOME</a></li><li><a href="history.html" target="_parent">HISTORY</a></li><li><a href="follow.html" target="_parent">FOLLOW US</a></li><li><a href="contact.html" target="_parent">CONTACT</a></li></ul></div>
+        <div class="head1">
+            <div class="rech">
+                <img src="R.jpg" width="55px" height="55px">
+                <a href="index.html" class="log" target="_parent">LES VODOUNNON</a>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" target="_blank">Historique</a></li>
+                <li><a href="#" target="_blank">Formation</a></li>
+                <li><a href="#" target="_blank">Comptes +</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">A propos</a></li>
+            </ul>
+        </div>
     </header>
     <!-- feuille de style header -->
     <style>
         *{
-            margin: 0; padding: 0; box-sizing: border-box; font-family: Verdana, Geneva, Tahoma, sans-serif; list-style: none; text-decoration: none;
+            list-style: none;
+            margin: 0; padding: 0;
+            text-decoration: none;
+            z-index: 1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         header{
-            position: relative; margin: 0 auto; background: rgb(2, 2, 2); align-items: center; display: flex; height: 70px; justify-content: space-between;
+            width: 100%; border-bottom: 1px solid lavender;
+            min-height: 20vh; box-shadow: 3px 3px 5px lavender;
+            left: 0; right: 0; top: 0; position: relative;
+            justify-content: space-between; 
+            align-items: center; display: block;
         }
-        header .logo{
-            padding: 5px; display: block;
+        header .head1{
+            display: flex; justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid lavender;
+            height: 10vh; width: 100%;
         }
-        .logo img{
-            cursor: pointer; margin-right: 10px; border-radius: 30px; float: left;
+        .head1{
+            background: #2c2b2b; width: 100%;
         }
-        .logo .titre{
-            font-size: 20px; font-weight: bold; color: rgb(209, 209, 209); cursor: pointer;
+        .rech {
+            display: flex; padding: 10px;
         }
-        .logo em{
-            display: block; color: rgb(207, 211, 204); cursor: pointer; text-align: center;
+        .head1 .rech img{
+            border-radius: 30px; float: left;
         }
-        header .menu ul{ 
-            display: flex; padding: 5px;
+        .head1 .rech .log{
+            cursor: pointer;
+            padding: 15px 10px; font-size: 25px;
+            color: #e9e9e9; font-weight: bold;
+            border-right: 2px solid lavender;
         }
-        .menu ul li{
-            margin: 0 auto; padding: 10px;
+        .head1 button:hover{
+            background: red; transition: .7s ease-in-out;
         }
-        .menu ul li a{
-            font-weight: bold; font-size: 15px; color: rgb(209, 209, 209); cursor: pointer; transition: .7s;
-        }
-        .logo .titre:hover{
-            color:rgb(129, 129, 129); transition: all .7s ease-in-out;
-        }
-        .logo em:hover{
-            color:rgb(129, 129, 129); transition: all .7s ease-in-out; 
-        }
-        .menu ul li a:hover{
-            color:rgb(129, 129, 129); transition: all .7s ease-in-out;
-        }
-        .checkbtn{
-        color: white; font-size: 30px; line-height: 80px; margin-right: 20px; cursor: pointer; display: none;
-    }
-    #btn{
-        display: none;
-    }
-    @media (max-width: 858px) {
-        .checkbtn{
-            display: block;
-        }
-        article{
-            width: 100%; margin: auto;
-        }
-        article section img{
-            display: block; float: none;
-        }
-        .logo{
-            margin-left: 7vh;
+        .menu{
+            min-width: 100%; min-height: 10vh;
         }
         .menu ul{
-            background: rgb(0, 14, 14); position: fixed; width: 100%; height: 10vh; top: 70px; left: -100%; transition: all .5s; align-items: center; display: block;
+            display: flex; width: 100%;
+            justify-content: center;
+            padding: 20px; text-align: center;
+            align-items: center; position: relative;
         }
-        #btn:checked ~ ul{
-            left: 0;
+        .menu ul li{
+            padding: 3px 20px;
         }
-    }
+        .menu ul li:hover{
+            background: lavender;
+            transition: .7s ease;
+            padding: 20px 10px;
+        }
+        .menu ul li a{
+            cursor: pointer;
+            font-size: 20px; font-weight: bold;
+            color: #2c2b2b;
+        }
+        .menu ul li ul{
+            width: 120px; display: block;
+            display: none;
+            position: absolute; left: 13%;
+            right: 0%; top: 74%; margin: 0 auto;
+            background: rgb(235, 235, 235);
+        }
+        .menu ul li ul li{
+            padding: 5px 10px; cursor: pointer;
+        }
+        .menu ul li:hover ul{
+            display: initial;
+        }
+        @media(max-width: 800px){
+            .rech .log{
+                display: block; font-size: 20px;
+            }
+            .menu ul{
+                display: block; text-align: left;
+                margin: auto;
+            }
+            .menu ul li a:hover{
+                cursor: pointer; position: fixed;
+                background: lavender;
+                transition: all .2s;
+                box-shadow: 3px 3px 10px rgb(70, 70, 70);
+                color: #3c3333; padding: 5px 10px;
+            }
+        }
     </style>
-    <div class="contenu">
-        <h4 id="text">Bonjour!</h4><p>Bienvenue dans notre page Web <strong>: "la communauté Calavi Zodemin au Congo"</strong>. Merci de consulter ce site internet, vous serez bien informer.</p>
-        <p>Premièrement,la communauté <strong>Calavi Zodemin</strong> au Congo est une école initiatique de l'enseignement des rites du vodou. Votre navigation dans ce site Web prouve que vous savez pas mal des secrets des rites du vodou.</p>
-        <h4 id="text1">histoire et origine du vodou: <em>Wikipédia.org</em></h4>
-        <section class="lien"><p>Le vaudou est né de la rencontre des cultes traditionnels des dieux yorubas et des divinités akans : Aja, fon et ewe, lors de la création puis l'expansion du royaume Fon d'Abomey aux xviie et xviiie siècles.
-            (Le vaudou ou vodou, ou vodoun, ou encore voodoo), plus rarement appelé vaudouisme, est une religion originaire de l'ancien royaume du Dahomey (Afrique de l'Ouest). Parfois assimilé à des pratiques occultes éclatées en de multiples communautés, cette religion d'ordre cosmique issue des cultes animistes africains, est toujours largement répandue au Bénin et au Togo.</p></section>
-               <p><iframe src="https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e9/Vaudou_%C3%A0_Ouidah_%284%29.webm/Vaudou_%C3%A0_Ouidah_%284%29.webm.720p.webm" frameborder="0"></iframe>
-                À partir du xviie siècle, les Hommes capturés, réduits en esclavage, originaires de cette région d'Afrique répandirent le culte vaudou aux Caraïbes et en Amérique. Le vaudou se retrouve donc sous différentes formes à Cuba, à Haïti (vaudou haïtien), au Brésil ou encore aux États-Unis (notamment en Louisiane). Il s'est aussi répandu en Afrique du Nord, où il se retrouve sous différentes formes, dont la plus connue est le Gnawa au Maroc mélangé au folklore religieux berbéro-musulman. Le culte vaudou compte environ 50 millions de pratiquants dans le monde.</p>
-                <p>De nombreuses communautés « vaudouisantes » existent dans le monde entier, majoritairement sur le continent américain, et aux Antilles. Il existe en Europe des communautés plus discrètes mais néanmoins actives tel que le Hounfor bonzanfè, le Lakou sans Lune ou le Hounfor Konblanmen. Au début du xxie siècle, le vaudou s'étend également au Canada où de nombreuses communautés ont vu le jour et tentent de mettre ce système de croyance au-devant de la scène.
-                Le vaudou est le fondement culturel des peuples qui sont issus par migrations successives de Tado au Togo, les Aja (dont les Fons, les Gouns, les Ewe… et dans une certaine mesure les Yoruba…) peuples qui constituent un élément important des populations au sud des États du Golfe du Bénin (Bénin, Togo, Ghana, Nigéria…).
-                Le mot vaudou provient du terme vodoun de langue fon. Le « n » final de vodoun, quasi inaudible, fut retiré, donnant ainsi le terme vaudou, ayant plusieurs orthographes selon les pays en fonction de ce que les colons ont phonétiquement rapporté. Le terme vaudou n'existe d'ailleurs pas au Bénin et c'est bien le terme de langue fon qui est employé pour désigner cette pratique. Le vaudou désigne l'ensemble des dieux ou des forces invisibles dont les hommes essaient de se concilier la puissance ou la bienveillance. Il est l'affirmation d'un monde surnaturel, mais aussi l'ensemble des procédures permettant d'entrer en relation avec celui-ci.
-                <article><section><img src="image8.jpg" alt=""></section><section><img src="WhatsApp Image 2023-04-15 à 18.44.20.jpg"></section><section><img src="image19.jpg" alt=""></section></article></p>
-                <section class="lien"><p>Le vaudou vient des croyances de certaines tribus/castes africaines qui se sont répandues et déformées par l'acculturation d'un christianisme dominant en Amérique et la violence de l'esclavagisme négrier, croyances qui étaient d'ailleurs elles-mêmes rejetées à l'origine par d'autres tribus/castes africaines voisines : il s'agit d'une « magie » se voulant maléfique et, en Afrique, cachée, car représentant des « valeurs décadentes » pour la majorité des Africains bien avant l'arrivée des Européens. Avec la traite négrière, la culture vaudoue s'est étendue à l'Amérique et aux îles des Caraïbes, notamment Haïti.</section><section><img src="image10.jpg" width="110px" height="100px" id="image"><p>Le vaudou a cependant intégré certains rites et conceptions catholiques. Le vaudou a perduré et ses pratiquants affichent sans craintes leur croyance. Face à l'extension démographique et aux besoins en terres agricoles au Bénin, les forêts sacrées abritant des divinités vodoun servent de refuge à la faune et la flore, comme Cercopithecus mona, car la croyance vodoun protège ces forêts. <br> Le vaudou correspond au culte yoruba des Orishas. De même que le vaudou est un culte à l'esprit du monde de l'invisible. À chaque ouverture, le prêtre vodoun demande l'aide de l'esprit de Papa Legba pour ouvrir les portes des deux mondes.</p></section><br>
-                <p>La pratique de leur religion et culture était interdite par les colons, passible de mort ou d'emprisonnement, et se pratiquait par conséquent en secret. Maintenant savez l'histoire du vodou en Afrique.</p><br>
-    <h4 id="text">Notre page Facebook</h4><p>La page Facebook de la communauté<strong> Calavi Zodemin</strong> est privée. Seul les membres de cette communauté ont accès. De nombreuses informations aux secrets des rites du vodou notamment celle de la haute chambre de la communauté<strong> Calavi Zodemin</strong> au Congo sont publiées dans cette page. Vous verrez des images, des textes ou paragraphes et vidéos des cérémonies et autres que si votre demande a été accepté c’est-à-dire étant un membre de la communauté. Soyez sage et ayez l’air d’un responsable, car, toutes les mesures de confidentialité et conditions sont prises en charges. Ne vous posez pas des questions qu’on est difficile. Mais, respecter plutôt ces conditions ; c’est la chose la plus simple à faire.</p>
-    <section class="lien"><a href="https://facebook.com/groups/2430988047201473/" id="lien1" target="_blank">Facebook</a><p>| Ce lien vous guidera vers la page Facebook de l'AECCDC. Vous n'aviez qu’à cliquer sur le mot Facebook en bleu.</p></section>
-    <h4 id="text">Images des activitées scoutes</h4><h5>Connaissez-vous AECCDC?</h5><article><section><img src="image18.jpg" alt=""></section><section><img src="image13.jpg" alt=""></section><section><img src="image4.jpg" alt=""></section></article>
-    <p>Cela signifie : <strong>Association des éclaireurs de la communauté Calavi Zodemin au Congo</strong>. C’est un groupe du mouvement scoutisme de la communauté<strong> Calavi Zodemin</strong> nommé :« <strong>troupe dragon</strong> ». Si vous êtes aussi déjà un scout, on vous souhaite la bienvenue !</p>
-    </div>
-    <!-- feuille de style contenu -->
+    <body>
+        <article>
+        <section>
+            <h3>Où sommes nous ?
+                <div class="info">
+                    <p>Les auteurs de ce site web sont situés au Congo. <br>
+                        Information | contacter ce numéro : +221-77-293-7441 pour votre orientation.</p>
+                </div></h3>
+        </section>
+        </article>
+     <h4>Bonjour !</h4>
+     <p>Nous vous souhaitons | Bienvenue dans notre page web</p>
+     <p>Voudriez-vous avoir un compte d'utilisateur ?</p>
+     <div class="cont">
+        <a href="">Connectez-vous à votre compte</a>
+        <a href="">Creer votre compte</a>
+     </div>
+    </body>
+    <!-- feuille de style body -->
     <style>
-        .contenu{
-            padding: 10px; width: 100%;
-        }
-        .contenu #text{
-            font-weight: bold; color: rgb(21, 22, 22); margin: 0 auto 10px; padding-bottom: 10px;  border-bottom: 2px solid rgb(160, 160, 160);
-        }
-        .contenu p{
-            margin: 10px auto 10px auto; text-align: justify; font-family: monospace;
-        }
-        .contenu section ol li{
-            display: block; padding: 4px 0; cursor: pointer; font-family: monospace;
-        }
-        .contenu .lien{
-            background: rgb(231, 231, 231); padding: 4px; border-top: 2px solid rgb(160, 160, 160); width: 100%; display: block;
-        }
-        .lien #lien1{
-            text-align: justify; font-family: monospace; color: blue; font-weight: bold;
-        }
         article{
-            width: 100%; display: flex;
+            background: #fafafa;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%; height: 40vh;
+            border-bottom: 2px solid lavender;
         }
-        .contenu section img{
-            padding: 2px; width: 110px; height: 100px;
+        article section{
+            height: 10px; margin: 0 auto;
+            display: block; padding: 10px;
+            width: 300px; align-items: center;
+            justify-content: center;
         }
-        #mot{
-            color: blue; cursor: pointer; font-family: monospace;
+        article section h3{
+            display: block;
+            font-size: 20px; font-weight: bold;
         }
-        iframe{
-            float: right; padding: 0 10px;
+        article section h3:hover .info{
+            display: initial; cursor: pointer;
         }
-        #image{
-            padding: 0 10px; float: left;
+        article section .info{
+            margin: 20px;
+            left: 20px; border-left: 5px solid red;
+            display: none;
+            position: absolute;
+            background: #e9e9e9;
+            padding: 10px 30px;
+            transition: all .5s ease-in-out;
+            width: 300px;
         }
-        video{
-            display: block; height: 35vh; margin: 10px auto;
+        article section h3:hover{
+            cursor: pointer;
+            padding: 10px 20px;
+            background: lavender;
+            transition: .5s;
         }
-        #text1{
-            margin: 0 auto 5px;
+        body h4{
+            font-size: 30px; font-weight: bold;
+            padding: 10px 10px; text-align: center;
+            color: #3c3333;
         }
-        strong{
-            font-family: monospace;
+        body p{
+            text-align: center;
+            padding: 5px 10px;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; margin: 0 auto;
+            border-top: 1px solid lavender;
+        }
+        .cont a{
+            text-decoration: none;
+            padding: 20px 10px; color: #2c2b2b;
+        }
+        .cont a:hover{
+            transition: all .5s ease;
+            cursor: pointer;
+            padding: 20px;
+            color: white;
+            background: #2c2b2b;
+        }
+        @media(max-width: 800px){
+            .cont{
+                align-items: center;
+                justify-content: center;
+                display: block; padding: 20px;
+            }
+            article{
+                display: block;
+                margin: 30px auto;
+                justify-content: center;
+            }
+            article section{
+                display: block;
+                margin: 50px auto;
+                justify-content: center;
+            }
         }
     </style>
-            <div class="pied">
-                <a href="#" id="foot">Terms & conditions|Don't have an account?</a></div>
-        </body>
-        <!-- feuille de style footer -->
-        <style>
-            #foot{
-                font-family: monospace; color: rgb(209, 209, 209); padding: 0 10px; cursor: pointer;
+    <footer>
+        <div class="lef">
+            <a href="#" id="foot">Terms and using conditions</a>
+            <div class="lef2">
+                <a href="" class="conte">Compte</a>
+                <a href="" class="conte">Se connecter</a>
+                <a href="" class="conte">S'inscrire</a>
+                <a href="" class="conte">Aides</a>
+            </div>
+        </div>
+        <div class="rig">
+            <label for="input">Subscribe</label>
+            <input type="text" placeholder="Votre E-mail">
+            <button type="submit">Envoyé</button>
+        </div>
+        <div class="blog">
+            <a id="box-blog">Copyright 2023@CalaviZo</a>
+        </div>
+    </footer>
+    <!-- feuille de style footer -->
+    <style>
+        footer{
+            position: relative;
+            padding: 20px; height: 45vh;
+            display: block;
+            right: 0; top: 0; left: 0;
+            align-content: center;
+            background: #2c2b2b;
+            width: 100%;
+        }
+        .lef{
+            margin: 0 auto;
+            display: block;
+            align-items: center;
+        }
+        .lef #foot{
+            cursor: pointer;
+            margin: auto;
+            padding: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .lef #foot:hover{
+            padding: 20px 10px;
+            transition: .5s;
+            background: #fafafa;
+            color: #3c3333;
+        }
+        .lef .lef2{
+            display: block; width: 130px;
+            padding: 20px 20px;
+        }
+        .lef .lef2 .conte{
+            cursor: pointer;
+            padding: 5px 0;
+            display: block; color: white;
+        }
+        .lef .lef2 .conte:hover{
+            background: #e9e9e9;
+            padding: 10px; border-left: 2px solid red;
+            color: #3c3333; transition: all .5s;
+        }
+        .rig{
+            width: 100%; position: relative;
+        }
+        .rig label{
+            color: #fafafa; font-weight: bold;
+        }
+        .rig input{
+            padding: 0 20px;
+            border: none; outline: none;
+            width: 30vh; display: block; height: 30px;
+        }
+        .rig button{
+            background: red; border: none;
+            padding: 7px; margin: auto;
+        }
+        .rig button:hover{
+            padding: 5px 7px;
+            transition: .5s;
+            background: #e9e9e9;
+            color: #3c3333;
+        }
+        .blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; padding: 20px;
+        }
+        .blog #box-blog{
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            color: #fafafa; font-weight: bold;
+        }
+        @media(max-width: 800px){
+            footer{
+                justify-content: center;
+                display: block;
+                padding: 10px;
             }
-            #foot:hover{
-                color:rgb(129, 129, 129); transition: all .7s ease-in-out;
+            footer .lef{
+                margin: 0 auto;
+                justify-content: center;
+                display: block;
             }
-            .pied{
-                display: flex; padding: 10px; justify-content: center;
-            }
-        </style>
-</body>
+        }
+    </style>
 </html>

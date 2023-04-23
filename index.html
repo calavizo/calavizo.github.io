@@ -30,6 +30,7 @@
             margin: 0; padding: 0;
             text-decoration: none;
             z-index: 1;
+            box-sizing: border-box;
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
         header{
@@ -132,92 +133,7 @@
         <a href="">Connectez-vous à votre compte</a>
         <a href="">Creer votre compte</a>
      </div>
-    </body>
-    <!-- feuille de style body -->
-    <style>
-        article{
-            background: #fafafa;
-            justify-content: center;
-            padding: 10px;
-            margin: 10px auto 0 auto;
-            width: 80%; height: 40vh;
-            border-bottom: 2px solid lavender;
-        }
-        article section{
-            height: 10px; margin: 0 auto;
-            display: block; padding: 10px;
-            width: 300px; align-items: center;
-            justify-content: center;
-        }
-        article section h3{
-            display: block;
-            font-size: 20px; font-weight: bold;
-        }
-        article section h3:hover .info{
-            display: initial; cursor: pointer;
-        }
-        article section .info{
-            margin: 20px;
-            left: 20px; border-left: 5px solid red;
-            display: none;
-            position: absolute;
-            background: #e9e9e9;
-            padding: 10px 30px;
-            transition: all .5s ease-in-out;
-            width: 300px;
-        }
-        article section h3:hover{
-            cursor: pointer;
-            padding: 10px 20px;
-            background: lavender;
-            transition: .5s;
-        }
-        body h4{
-            font-size: 30px; font-weight: bold;
-            padding: 10px 10px; text-align: center;
-            color: #3c3333;
-        }
-        body p{
-            text-align: center;
-            padding: 5px 10px;
-        }
-        .cont{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center; margin: 0 auto;
-            border-top: 1px solid lavender;
-        }
-        .cont a{
-            text-decoration: none;
-            padding: 20px 10px; color: #2c2b2b;
-        }
-        .cont a:hover{
-            transition: all .5s ease;
-            cursor: pointer;
-            padding: 20px;
-            color: white;
-            background: #2c2b2b;
-        }
-        @media(max-width: 800px){
-            .cont{
-                align-items: center;
-                justify-content: center;
-                display: block; padding: 20px;
-            }
-            article{
-                display: block;
-                margin: 30px auto;
-                justify-content: center;
-            }
-            article section{
-                display: block;
-                margin: 50px auto;
-                justify-content: center;
-            }
-        }
-    </style>
-    <footer>
+     <footer>
         <div class="lef">
             <a href="#" id="foot">Terms and using conditions</a>
             <div class="lef2">
@@ -240,8 +156,9 @@
     <style>
         footer{
             position: relative;
-            padding: 20px; height: 45vh;
+            padding: 20px; height: 55vh;
             display: block;
+            margin: 0 auto;
             right: 0; top: 0; left: 0;
             align-content: center;
             background: #2c2b2b;
@@ -325,4 +242,91 @@
             }
         }
     </style>
+     <!-- feuille de style body -->
+     <style>
+        article{
+            background: #fafafa;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px auto 0 auto;
+            width: 50%; height: 40vh;
+            border-bottom: 2px solid lavender;
+        }
+        article section{
+            height: 10px; margin: 0 auto;
+            display: block; padding: 10px;
+            width: 300px; align-items: center;
+            justify-content: center;
+        }
+        article section h3{
+            display: block;
+            font-size: 20px; font-weight: bold;
+        }
+        article section h3:hover .info{
+            display: initial; cursor: pointer;
+        }
+        article section .info{
+            margin: 20px;
+            left: 20px; border-left: 5px solid red;
+            display: none;
+            position: absolute;
+            background: #e9e9e9;
+            padding: 10px 30px;
+            transition: all .5s ease-in-out;
+            width: 300px;
+        }
+        article section h3:hover{
+            cursor: pointer;
+            padding: 10px 20px;
+            background: lavender;
+            transition: .5s;
+        }
+        body h4{
+            font-size: 30px; font-weight: bold;
+            padding: 10px 10px; text-align: center;
+            color: #3c3333;
+        }
+        body p{
+            text-align: center;
+            padding: 5px 10px;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; margin: 0 auto;
+            border-top: 1px solid lavender;
+        }
+        .cont a{
+            text-decoration: none;
+            padding: 20px 10px; color: #2c2b2b;
+        }
+        .cont a:hover{
+            transition: all .5s ease;
+            cursor: pointer;
+            padding: 20px;
+            color: white;
+            background: #2c2b2b;
+        }
+        @media(max-width: 800px){
+            .cont{
+                align-items: center;
+                justify-content: center;
+                display: block; padding: 20px;
+            }
+            article{
+                display: block;
+                margin: 30px auto;
+                justify-content: center;
+            }
+            article section{
+                display: block;
+                margin: 50px auto;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    </body>
+   
 </html>

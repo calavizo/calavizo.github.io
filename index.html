@@ -1,0 +1,132 @@
+<head>
+<title>calavizodemin</title>
+</head>
+<html>
+<body>
+    <nav>
+        <input type="checkbox" id="btn">
+        <div class="box-titre">
+            <img src="logo.png" width="40px" height="40px">
+            <a href="index.html" id="titre">CalaviZodemin</a>
+            </div>
+            <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscript.html">Demande d'inscription</a></li>
+            <li><a href="aide.html">Aides</a></li>
+            <li><a href="propos.html">A propos</a></li>
+            </ul>
+            <label for="btn">Menu</label>
+    </nav>
+    <div class="contenu">
+        <div class="box">
+            
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none; list-style: none; z-index: 1;
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+    nav{
+        position: relative; width: 100%; height: 50px;
+        background: rgb(230, 230, 230); display: flex;
+        top: 0; right: 0; left: 0; align-items: center;
+    }
+    nav .box-titre{
+        display: flex; align-items: center;
+    }
+    nav .box-titre img{
+        margin: 5px;
+        border-top-left-radius: 5px; border-bottom-right-radius: 5px;
+    }
+    nav .box-titre #titre{
+        color: rgb(29, 0, 29); font-size: 30px; font-weight: bold;
+    }
+    nav ul{
+        display: flex; align-items: center;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        color: rgb(29, 0, 29); cursor: pointer;
+    }
+    #btn{
+        display: none;
+    }
+    label{
+        display: none;
+        background: rgb(29, 0, 29); font-weight: 550;
+        padding: 10px; color: rgb(230, 230, 230);
+    }
+    @media(max-width: 840px){
+        label{
+            display: block; float: right; margin: 0 490px;
+        }
+        nav ul{
+            background: rgb(230, 230, 230); transition: all .5s;
+            width: 100%; height: 100vh; top: 50px; right: 0;
+            position: fixed; display: block; left: -100%;
+        }
+        nav ul li a{
+            border-left: 1px solid red; padding: 0 10px; cursor: pointer;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
+    @media(max-width: 694px){
+        label{
+            display: block; margin-left: 350px;
+        }
+        nav ul{
+            background: rgb(230, 230, 230); transition: all .7s;
+            width: 100%; height: 100vh; top: 50px; right: 0;
+            position: fixed; display: block; left: -100%;
+        }
+        nav ul li a{
+            border-left: 1px solid red; padding: 0 10px; cursor: pointer;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
+    @media(max-width: 549px){
+        label{
+            display: block; float: right; margin-left: 210px;
+        }
+        nav ul{
+            background: rgb(230, 230, 230); transition: all .7s;
+            width: 100%; height: 100vh; top: 50px; right: 0;
+            position: fixed; display: block; left: -100%;
+        }
+        nav ul li a{
+            border-left: 1px solid red; padding: 0 10px; cursor: pointer;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
+    @media(max-width: 350px){
+        label{
+            display: block; float: left; margin: 0 auto;
+        }
+        nav ul{
+            background: rgb(230, 230, 230); transition: all .4s;
+            width: 100%; height: 100vh; top: 50px; right: 0;
+            position: fixed; display: block; left: -100%;
+        }
+        nav ul li a{
+            border-left: 1px solid red; padding: 0 10px; cursor: pointer;
+        }
+        #btn:checked ~ ul{
+            left: 0;
+        }
+    }
+</style>

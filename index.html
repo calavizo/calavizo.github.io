@@ -1,88 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>calavizodemin</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacommunautecalavizodemin</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<html>
 <body>
-    <nav>
-        <input type="checkbox" id="btn">
-        <div class="box-titre">
-            <img src="logo.png" width="40px" height="40px">
-            <a href="index.html" id="titre">La communauté Calavi Zodemin</a>
+   <div class="contenu">
+    <div class="entete">
+        <div class="logo">
+            <div class="lg">
+                <img src="logo.png" id="img" alt="" width="80px" height="80px">
+                <a href="index.html" id="titre"><h2>CalaviZodemin</h2></a>
             </div>
-            <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="inscript.html">Demande d'inscription</a></li>
-            <li><a href="aide.html">Aides</a></li>
-            <li><a href="propos.html">A propos</a></li>
-            </ul>
-            <label for="btn">Menu</label>
-    </nav>
-    <div class="contenu">
-        <div class="box">
-
         </div>
-        <div class="footer">
-
+        <div class="corps-info">
+            <div class="box1">
+                <h4>Rejoindre<br>La communaute Calavi Zodemin au Congo</h4>
+                <div class="image">
+                    <img src="logo2.jpg" alt="" width="500px" height="400px">
+                </div>
+            </div>
         </div>
     </div>
+   </div> 
+   <div class="box2">
+    <h4 class="titre">Demande d'inscription</h4>
+    <a href="inscript.html" target="_blank"><ion-icon name="folder-open-outline"></ion-icon></a><a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a><a href="https://www.facebook.com/profile.php?id=100092230037206" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a><a href="mailto:calavizodemin@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+    <p>Service : +242 06 628 46 38</p><a href="calavizo.github.io" id="adresse"><ion-icon name="globe-outline"></ion-icon><p> calavizo.github.io</p></a>
+    <div class="box3">
+        <a href="https://www.facebook.com/groups/2430988047201473/" id="info" target="_blank">AECCDC</a>
+    </div>
+</div>
 </body>
 </html>
+<!-- feuille de style css -->
 <style>
     *{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-decoration: none; list-style: none; z-index: 1;
-        margin: 0; padding: 0; box-sizing: border-box;
+        margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;
     }
-    nav{
-        position: relative; width: 100%; height: 80px;
-        background: rgb(230, 230, 230); display: flex;
-        top: 0; right: 0; left: 0; align-items: center;
-        justify-content: space-between;
+    body{
+        background: lavender;
     }
-    nav .box-titre{
+    .entete{
+        width: 100%; height: 50vh; position: relative; background: rgb(0, 0, 65); display: block;
+    }
+    .logo{
+        display: flex; justify-content: space-between;
+    }
+    .lg{
         display: flex; align-items: center;
     }
-    nav .box-titre img{
-        margin: 5px;
-        border-top-left-radius: 5px; border-bottom-right-radius: 5px;
+    .entete .logo .lg #img{
+        margin: 10px; cursor: pointer;
     }
-    nav .box-titre #titre{
-        color: rgb(29, 0, 29); font-size: 25px; font-weight: bold;
+    .entete .logo .lg #titre{
+        color: rgb(209,209,209); font-size: 20px; padding: 10px; cursor: pointer;
     }
-    nav ul{
-        display: flex; align-items: center;
+    .corps-info{
+        width: 60%; display: block; height: 50vh;
     }
-    nav ul li{
-        padding: 10px;
+    .corps-info .box1{
+        width: 100%; height:50vh; padding: 20px; margin: 0 10px; background: orange;
     }
-    nav ul li a{
-        color: rgb(29, 0, 29); cursor: pointer; font-size: 20px;
+    .box1 h4{
+        color: rgb(46, 46, 46); font-size: 20px;
     }
-    #btn{
-        display: none;
+    .image{
+        display: flex; justify-content: left; align-items: center; padding: 10px;
     }
-    label{
-        display: none;
-        background: rgb(29, 0, 29); font-weight: 550;
-        padding: 10px; color: rgb(230, 230, 230);
+    .box2{
+        text-align: right; padding: 30px; width: 100%; height: 50vh;
     }
-    @media(max-width: 1200px){
-        label{
-            display: block; float: right; margin-left: 650px;
-        }
-        nav ul{
-            background: rgb(230, 230, 230); transition: all .7s;
-            width: 100%; height: 100vh; top: 80px; right: 0;
-            position: fixed; display: block; left: -100%;
-        }
-        nav ul li a{
-            border-left: 1px solid red; padding: 0 10px; cursor: pointer;
-        }
-        #btn:checked ~ ul{
-            left: 0;
-        }
+    .titre{
+        color: rgb(85,85,85); font-size: 20px; padding: 10px;
     }
-    .contenu{
-        background: rgb(85,85,85); width: 100%; height: 100%;
+    .box2 a{
+        padding: 0 10px; font-size: 20px; color: rgb(1, 77, 60); cursor: pointer;
+    }
+    .box2 p{
+        color: rgb(71, 71, 71); padding: 10px; cursor: pointer;
+    }
+    .box2 ion-icon:hover{
+        padding: 0 10px; transition: all .3s; cursor: pointer;
+    }
+    .box2 .box3{
+        text-align: right; padding: 30px; width: 100%;
+    }
+    .box3 #info{
+        font-size: 15px; color: rgb(46, 46, 46); cursor: pointer; margin-right: 30px;
+    }
+    .box3 #info:hover{
+        color: rgb(209,209,209); padding: 10px 20px; cursor: pointer; background: rgb(1, 77, 60); transition: all .3s;
+    }
+    #adresse{
+        display: flex; justify-content: right; align-items: center;
     }
 </style>

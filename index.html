@@ -25,7 +25,8 @@
                     <li><a href="">A propos</a></li>
                 </ul>
             <div class="barre">
-                <input type="search" name="search" id="barre" placeholder="Recherche ici..." autofocus>
+                <input type="search" name="search" id="barre" placeholder="Recherche ici..." onchange="OpenPage" autofocus>
+                <input type="button" value="Search" onclick="OpenPage" id="btn">
                 <div class="user">
                     <ion-icon name="person-circle" id="use"></ion-icon>
                 </div>
@@ -102,6 +103,13 @@
         align-items: center;
         padding: 10px;
     }
+    .barre #btn{
+        padding: 10px;
+        background: blue;
+        border: none;
+        border-radius: 10px;
+        margin-left: -30px;
+    }
     .barre #barre{
         width: 50vh;
         height: 6vh;
@@ -132,10 +140,10 @@
             display: none;
         }
         .logo{
-            margin: 0 10px;
+            margin: 0 2px;
         }
         .barre{
-            margin: -10px auto;
+            margin: -20px auto;
         }
         .barre #barre{
             width: 35vh;

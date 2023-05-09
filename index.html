@@ -7,6 +7,23 @@
     <title>CalaviZodemin</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function ouvrirpage(){
+            var a = document.getElementById("barre").value;
+            if(a == "calavizodemin"){
+                window.open("/index.html");
+            }
+            if(a == "inscript"){
+                window.open("/inscript.html");
+            }
+            if(a == "youtube"){
+                window.open("https://www.youtube.com");
+            }
+            if(a == "google"){
+                window.open("https://www.google.com");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="contenu">
@@ -24,9 +41,9 @@
                     <li><a href="">Supports</a></li>
                     <li><a href="">A propos</a></li>
                 </ul>
-            <div class="barre">
-                <input type="search" name="search" id="barre" placeholder="Recherche ici..." onchange="OpenPage" autofocus>
-                <input type="button" value="Search" onclick="OpenPage" id="btn">
+            <div class="bar">
+                <input type="search" name="search" value="" id="barre" placeholder="Recherche ici..." onchange="ouvrirpage()" autofocus>
+                <input type="button" value="Search" onclick="ouvrirpage()" id="btn">
                 <div class="user">
                     <ion-icon name="person-circle" id="use"></ion-icon>
                 </div>
@@ -99,19 +116,20 @@
         color: rgb(168, 168, 168);
         transition: all .5s ease-in-out;
     }
-    .barre{
+    .bar{
         display: flex;
         align-items: center;
         padding: 10px;
     }
-    .barre #btn{
-        padding: 10px;
+    .bar #btn{
+        outline: none;
+        padding: 12px;
         background: blue;
         border: none;
         border-radius: 10px;
         margin-left: -30px;
     }
-    .barre #barre{
+    .bar #barre{
         width: 50vh;
         height: 6vh;
         border-radius: 5px;
@@ -120,12 +138,12 @@
         border: none;
         background: rgb(209,209,209);
     }
-    .barre .user{
+    .bar .user{
         align-items: center;
         padding: 10px;
         margin: 15px;
     }
-    .barre .user #use{
+    .bar .user #use{
         color: blue;
         font-size: 50px;
     }
@@ -146,10 +164,10 @@
         .logo{
             margin: 0 8px;
         }
-        .barre{
+        .bar{
             margin: -30px auto;
         }
-        .barre #barre{
+        .bar #barre{
             width: 25vh;
         }
     }

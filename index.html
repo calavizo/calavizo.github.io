@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalaviZodemin</title>
+    <link rel="shortcut icon" href="logo2.jpg" type="image/jpg">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         function ouvrirpage(){
             var a = document.getElementById("barre").value;
-            if(a == "calavizodemin"){
-                window.open("/index.html");
-            }
-            if(a == "inscript"){
-                window.open("/inscript.html");
-            }
             if(a == "Youtube"){
                 window.open("https://www.youtube.com");
             }
             if(a == "Google"){
                 window.open("https://www.google.com");
+            }
+            if(a == "aide"){
+                window.open("/aide.html");
             }
         }
     </script>
@@ -29,17 +27,17 @@
     <div class="contenu">
         <div class="head">
             <div class="logo">
-                <img src="logo2.jpg" alt="" width="45px" height="45px">
+                <a href="index.html"><img src="logo2.jpg" alt="" width="45px" height="45px"></a>
                 <div class="titre">
                     <a href="index.html" id="titre"><h2>CalaviZodemin</h2></a>
                     <em>Congo / Pointe-Noire</em>
                 </div>
             </div>
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Supports</a></li>
-                    <li><a href="">A propos</a></li>
+                    <li><a href="index.html" target="_parent">Accueil</a></li>
+                    <li><a href="contact.html" target="_parent">Contact</a></li>
+                    <li><a href="Demandedinscription.html" target="_parent">Demande d'inscription</a></li>
+                    <li><a href="" target="_parent">A propos</a></li>
                 </ul>
             <div class="bar">
                 <input type="search" name="search" value="" id="barre" placeholder="Recherche ici..." onchange="ouvrirpage()" autofocus>
@@ -50,7 +48,48 @@
             </div>
         </div>
         <div class="corps-principal">
-
+            <div class="corps1">
+                <a href="Demandedinscription.html" target="_parent" id="link">Demande d'inscription</a>
+                <a href="formation.html" target="_parent" id="link">Mode d'emploi des formations</a>
+                <a href="contact.html" target="_parent" id="link">Contacter nous</a>
+                <a href="" id="link">A propos</a>
+                <a href="aide.html" target="_parent" id="link">Aide</a>
+            </div>
+            <div class="box">
+                <img src="" alt="">
+            </div>
+            <div class="box">
+                <h2>hello</h2>
+            </div>
+            <div class="footer">
+                <h3>Nos services | nos activités</h3>
+                <div class="box-foot">
+                    <div class="foot">
+                        <h4>Formation scoute</h4>
+                        <p>Les adeptes de la communauté CalaviZodemin au Congo participent à des cours de formation scoute des plus jeunes aux adultes.
+                            Cette formation est liée a celle des rites du vodou; A vrai dire, le contenu des cours scouts sont  à 70% conformement à celui des rites du vodou.
+                        Ce qui permet entre autre, un équilibre spirituel, physique et mental d'état d'esprit pour les jeunes, adultes en apprentissages.</p>
+                    </div>
+                    <div class="foot">
+                        <h4>Formation en informatique</h4>
+                        <p>La communauté CalaviZodemin offre une opportunité en formation en informatique aux adeptes notamment les jeunes et adultes. En effet, cette formation permet d’aider les jeunes et autres personnes au chômage. De même pour les autres formations. NB : il n’y a pas de remise de diplôme mais plutôt l’objectif est de permettre qu’une personne d’avoir des connaissances nouvelles vers le monde professionnelle. </p>
+                    </div>
+                    <div class="foot">
+                        <h4>Formation en cuisine</h4>
+                        <p>Info générale : Nous offrons une formation en cuisine afin d’aider certains membres de la communauté aussi pour nos enfants qui en sentent besoin de promouvoir leur talent en cuisine. Comme nous l’avions déjà annoncé qu’il n’y a pas de remise de diplôme ou encore un certificat qualifié. Nous avons pensé que ces formations dans laquelle on est engagé va aider beaucoup d’entre nous dans de la communauté.</p>
+                    </div>
+                    <div class="foot">
+                        <h4>Formation en couture</h4>
+                        <p>La couture est l’un des métiers le plus répandu au monde. Nous offrons également cette opportunité pour les jeunes et adultes en besoin d’aide. Pour plus d’information veuillez contacter ce numéro TEL +242 06 802 22 99.<br>WhatsApp seulement...</p>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+                    <a href=""><ion-icon name="logo-google"></ion-icon>Google</a>
+                    <a href=""><ion-icon name="logo-youtube"></ion-icon>Youtube</a>
+                    <a href=""><ion-icon name="logo-whatsapp"></ion-icon>WhatsApp</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -75,7 +114,6 @@
         justify-content: space-between;
         align-items: center;
         background: white;
-        box-shadow: 2px 2px 10px rgb(209,209,209);
     }
     .logo{
         display: flex;
@@ -132,7 +170,7 @@
         cursor: pointer;
     }
     .bar #barre{
-        width: 60vh;
+        width: 50vh;
         height: 6vh;
         border-radius: 5px;
         outline: none;
@@ -172,5 +210,93 @@
         .bar #barre{
             width: 25vh;
         }
+        .corps1{
+            margin: 0 auto;
+            text-align: left;
+            height: 40vh;
+            width: 100%;
+
+        }
+        .corps1 #link{
+            border-right: none;
+        }
+    }
+    .corps-principal{
+        width: 100%; height: 100vh;
+        margin: 150px auto;
+        box-sizing: border-box;
+        display: block;
+    }
+    .corps1{
+        background: white;
+        margin: 0 auto;
+        padding: 10px;
+        width: 80%; height: 7vh;
+    }
+    .corps-principal .corps1 #link{
+        color: rgb(141, 141, 141);
+        font-size: 17px;
+        padding: 0 20px;
+        cursor: pointer;
+        border-right: 1px solid lavender;
+    }
+    .corps-principal .box{
+        background: white;
+        margin: 20px auto;
+        padding: 10px;
+        width: 80%; height: 70vh;
+    }
+    .corps-principal .footer{
+        display: block;
+        text-align: center;
+        margin: 0 auto; box-sizing: border-box;
+        background: rgb(120, 178, 255);
+        width: 100%; height: 70vh;
+    }
+    .footer .box-foot{
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .box-foot .foot{
+        display: block;
+        padding: 20px;
+        text-align: left;
+        width: 50vh;
+    }
+    .footer h3{
+        padding: 20px; color: rgb(85, 85, 85);
+    }
+    .foot h4{
+        margin-bottom: 10px;
+        font-size: 17px;
+        color: white;
+        padding: 0 10px;
+        border-left: 2px solid red;
+    }
+    .foot p{
+        color: rgb(85, 85, 85);
+        text-align: justify;
+    }
+    .footer .link{
+        height: 10vh;
+        background: rgb(85, 85, 85);
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; display: flex;
+        width: 100%; box-sizing: border-box;
+    }
+    .link ion-icon{
+        float: left;
+        color: rgb(0, 163, 155);
+        font-size: 25px;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    .link a{
+        font-size: 20px;
+        color: white;
+        padding: 0 30px;
+        cursor: pointer;
     }
 </style>

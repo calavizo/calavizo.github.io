@@ -1,124 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lacommunautecalavizodemin</title>
-    <link rel="shortcut icon" href="logo.png">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calavi</title>
+	<link rel="shortcut icon" type="image/jpg" href="logo2.jpg">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-   <div class="contenu">
-    <div class="entete">
-        <div class="logo">
-            <div class="lg">
-                <img src="logo.png" id="img" alt="" width="80px" height="80px">
-                <a href="index.html" id="titre"><h2>CalaviZodemin</h2></a>
-            </div>
-        </div>
-        <div class="corps-info">
-            <div class="box1">
-                <h4>Rejoindre<br>La communaute Calavi Zodemin au Congo</h4>
-                <div class="image">
-                    <img src="logo2.jpg" alt="" width="500px" height="400px">
-                </div>
-            </div>
-        </div>
-    </div>
-   </div> 
-   <div class="box2">
-    <h4 class="titre">Demande d'inscription</h4>
-    <a href="inscript.html" target="_blank"><ion-icon name="folder-open-outline"></ion-icon></a><a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a><a href="https://www.facebook.com/profile.php?id=100092230037206" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a><a href="mailto:calavizodemin@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
-    <p>Service : +242 06 628 46 38</p><a href="calavizo.github.io" id="adresse"><ion-icon name="globe-outline"></ion-icon><p> calavizo.github.io</p></a>
-    <div class="box3">
-        <a href="https://www.facebook.com/groups/2430988047201473/" id="info" target="_blank">AECCDC</a>
-    </div>
-</div>
+	<div class="head">
+		<div class="logo">
+			<a href="index.html"><img src="logo.jpg" width="150px" height="80px"></img></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="support.html">Supports</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="icon">
+			<a href=""><ion-icon id="icon" name="logo-youtube"></ion-icon></a>
+			<a href=""><ion-icon id="icon" name="logo-facebook"></ion-icon></a>
+			<a href=""><ion-icon id="icon" name="mail"></ion-icon></a>
+		</div>
+	</div>
+	<div class="body">
+			<div class="body-box1">
+				<div class="Recherche">
+					<a class="resultat" href=""><ion-icon name="newspaper"></ion-icon></a>
+					<a class="resultat" href=""><ion-icon name="image"></ion-icon></a>
+					<a class="resultat" href=""><ion-icon name="videocam"></ion-icon></a>
+				</div>
+				<input type="search" id="search" name="" value="" placeholder="Recherche ici..." autofocus>
+				<span><ion-icon name="search"></ion-icon></span>
+			</div>
+			<div class="body-box2">
+				
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<span class="lg-foot"><img src="logo.jpg" id="logo" width="80px" height="40px"></img></span>
+		<a href="">Privacy policy</a><a href="">Help</a><a href="">Terms of use</a>
+	</div>
 </body>
 </html>
-<!-- feuille de style css -->
-<style>
-    *{
-        margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    body{
-        background: lavender;
-    }
-    .contenu{
-        width: 100%; height: auto;
-        /* add flexbox style*/
-        display: flex; flex-direction: row;
-        justify-content: space-around;
-        flex-flow: wrap;
-    }
-    .entete{
-        width: 100%; height: 50vh; position: relative; background: rgb(0, 0, 65); display: block; box-sizing: border-box;
-    }
-    .logo{
-        display: flex; justify-content: space-between; box-sizing: border-box;
-    }
-    .lg{
-        display: flex; align-items: center; box-sizing: border-box;
-    }
-    .entete .logo .lg #img{
-        margin: 10px; cursor: pointer;
-    }
-    .entete .logo .lg #titre{
-        color: rgb(209,209,209); font-size: 20px; padding: 10px; cursor: pointer;
-    }
-    .corps-info{
-        width: 60%; display: block; height: 50vh; box-sizing: border-box;
-    }
-    .corps-info .box1{
-        width: 100%; height:50vh; padding: 20px; margin: 0 10px; background: orange; box-sizing: border-box;
-    }
-    .box1 h4{
-        color: rgb(46, 46, 46); font-size: 20px;
-    }
-    .image{
-        display: flex; justify-content: left; align-items: center; padding: 10px;
-    }
-    .box2{
-        text-align: right; padding: 30px; width: 100%; height: 50vh; box-sizing: border-box;
-    }
-    .titre{
-        color: rgb(85,85,85); font-size: 20px; padding: 10px;
-    }
-    .box2 a{
-        padding: 0 10px; font-size: 20px; color: rgb(1, 77, 60); cursor: pointer;
-    }
-    .box2 p{
-        color: rgb(71, 71, 71); padding: 10px; cursor: pointer;
-    }
-    .box2 ion-icon:hover{
-        padding: 0 10px; transition: all .3s; cursor: pointer;
-    }
-    .box2 .box3{
-        text-align: right; padding: 30px; width: 100%; box-sizing: border-box;
-    }
-    .box3 #info{
-        font-size: 15px; color: rgb(46, 46, 46); cursor: pointer; margin-right: 30px;
-    }
-    .box3 #info:hover{
-        color: rgb(209,209,209); padding: 10px 20px; cursor: pointer; background: rgb(1, 77, 60); transition: all .3s;
-    }
-    #adresse{
-        display: flex; justify-content: right; align-items: center;
-    }
-    @media(max-width: 950px){
-        .box2{
-            width: 80%; margin: 0 auto; position: relative; text-align: center; justify-self: center;
-        }
-        .box3{
-            width: 80%; margin: 0 auto; position: relative; text-align: center; justify-self: center;
-        }
-        .corps-info img{
-            display: none;
-        }
-        #info{
-            margin-right: 0; text-align: center;
-        }
-    }
+<style type="text/css">
+	*{
+		margin: 0; padding: 0; box-sizing: border-box; font-family: verdana;
+		list-style: none; text-decoration: none; z-index: 1;
+	}
+	.head{
+		width: 100%; position: relative; height: 80px; background: rgb(0,0,0);
+		display: flex; justify-content: center; align-items: center;
+		left: 0; top: 0; right: 0; margin: 0 auto;
+	}
+	.logo a img{
+		cursor: pointer;
+	}
+	.menu ul{
+		display: flex; align-items: center; justify-content: space-between; margin: 20px;
+	}
+	.menu ul li{
+		padding: 10px;
+	}
+	.menu ul li a{
+		color: rgb(250,250,250); cursor: pointer;
+	}
+	.menu ul li a:hover{
+		color: rgb(209,209,209); transition: .5s;
+	}
+	.icon{
+		display: flex; align-items: center; justify-content: space-between; margin: 20px;
+	}
+	.icon a #icon{
+		padding: 0 10px; color: rgb(250,250,250); font-size: 22px; cursor: pointer;
+	}
+	.icon a #icon:hover{
+		color: rgb(209,209,209); transition: .5s;
+	}
+	body{
+		background: rgb(227,227,227);
+	}
+	.body{
+		width: 60%; height: 70vh; margin: 20px auto; display: block; background: rgb(250,250,250);
+		padding: 10px; border-radius: 20px;
+	}
+	.body-box1{
+		width: 100%; height: 8vh; display: flex; justify-content: center; border-radius: 10px;
+		align-items: center; padding: 10px; margin: 0 auto; position: relative; box-shadow: 3px 3px 10px rgb(209,209,209);
+	}
+	#search{
+		height: 5vh; width: 60vh; padding: 0 15px; border-radius: 10px; outline: none; border: none; background: rgb(209,209,209);
+		position: sticky;
+	}
+	span{
+		font-size: 30px; margin: 0 -35px auto; cursor: pointer;
+	}
+	.Recherche{
+		margin: 10px; align-items: center;
+	}
+	.Recherche .resultat{
+		margin: 0 auto; padding: 0 10px; align-items: center; color: rgb(45,45,45); cursor: pointer; font-size: 22px;
+	}
+	.resultat:hover{
+		color: rgb(120,120,120); cursor: pointer; transition: .5s;
+	}
+	.foot{
+		width: 100%; height: 10vh; padding: 10px; margin: 0 auto; justify-content: center; align-items: center; display: flex;
+	}
+	.foot a{
+		padding: 0 10px; color: rgb(85,85,85); cursor: pointer; border-left: 1px solid rgb(180,180,180);
+	}
+	.foot .lg-foot #logo{
+		border-radius: 10px; border-left: none; margin: 0 50px; cursor: pointer;
+	}
 </style>

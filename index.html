@@ -1,153 +1,87 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calavi</title>
-	<link rel="shortcut icon" type="image/jpg" href="logo2.jpg">
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<head>
+		<title></title>
+		<link rel="shortcut icon" type="image/jpg" href="logo.jpg">
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-	<div class="head">
-		<div class="logo">
-			<a href="index.html"><img src="logo.jpg" width="150px" height="80px"></img></a>
-		</div>
-		<div class="menu">
-			<input type="checkbox" id="check" name="">
-		<label for="check" id="btn"><ion-icon name="reorder-three"></ion-icon></label>
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="support.html">Supports</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		<div class="icon">
-			<a href=""><ion-icon id="icon" name="logo-youtube"></ion-icon></a>
-			<a href=""><ion-icon id="icon" name="logo-facebook"></ion-icon></a>
-			<a href=""><ion-icon id="icon" name="mail"></ion-icon></a>
-		</div>
-	</div>
-	<div class="body">
-			<div class="body-box1">
-				<div class="Recherche">
-					<a class="resultat" href=""><ion-icon name="newspaper"></ion-icon></a>
-					<a class="resultat" href=""><ion-icon name="image"></ion-icon></a>
-					<a class="resultat" href=""><ion-icon name="videocam"></ion-icon></a>
+	</head>
+	<body>
+		<div class="contenu">
+			<nav>
+				<input type="checkbox" id="check">
+				<label for="check" id="btn"><ion-icon name="menu-outline"></ion-icon></label>
+				<div class="logo">
+					
+					<a href=""><img src="logo.jpg" alt="" width="30px" height="30px"></a>
+					<a href="" id="titre">La communauté calavi</a>
 				</div>
-				<input type="search" id="search" name="" value="" placeholder="Recherche ici..." autofocus>
-				<span><ion-icon name="search"></ion-icon></span>
-			</div>
-			<div class="body-box2">
-				
-			</div>
+					<ul>
+						<li><a href="">Accueil</a></li>
+						<li><a href="">Nous rejoindre</a></li>
+						<li><a href="">A propos</a></li>
+						<li><a href="">S'inscrire</a></li>
+						<li><a href="">Note</a></li>
+					</ul>
+				</nav>
 		</div>
-	</div>
-	<div class="foot">
-		<span class="lg-foot"><img src="logo.jpg" id="logo" width="80px" height="40px"></img></span>
-		<a href="">Privacy policy</a><a href="">Help</a><a href="">Terms of use</a>
-	</div>
-</body>
+	</body>
 </html>
-<style type="text/css">
+<style>
 	*{
-		margin: 0; padding: 0; box-sizing: border-box; font-family: verdana;
-		list-style: none; text-decoration: none; z-index: 1;
+		margin: 0; padding: 0; box-sizing: border-box; font-family: monospace; list-style-type: none;
 	}
-	.head{
-		width: 100%; position: relative; height: 80px; background: rgb(0,0,0);
-		display: flex; justify-content: center; align-items: center; flex-flow: wrap;
-		left: 0; top: 0; right: 0; margin: 0 auto; flex-direction: row;
+	nav{
+		display: flex; justify-content: space-around; align-items: center; width: 100%; height: 40px; background: rgb(0, 0, 12);
 	}
-	.logo a img{
-		cursor: pointer;
+	.logo{
+		display: flex; align-items: center;
 	}
-	.menu ul{
-		display: flex; align-items: center; justify-content: space-between; margin: 20px;
+	.logo a, #titre{
+		padding: 0 5px;  cursor: pointer;
 	}
-	.menu ul li{
-		padding: 10px;
+	#titre{
+		color: rgb(209,209,209); text-decoration: none; font-size: 20px; cursor: pointer;
 	}
-	.menu ul li a{
-		color: rgb(250,250,250); cursor: pointer;
+	ul{
+		display: flex; align-items: center;
 	}
-	.menu ul li a:hover{
-		color: rgb(209,209,209); transition: .5s;
+	ul li a{
+		padding: 0 10px; color: rgb(209,209,209); font-size: 17px; text-decoration: none; cursor: pointer;
 	}
-	.icon{
-		display: flex; align-items: center; justify-content: space-between; margin: 20px;
-	}
-	.icon a #icon{
-		padding: 0 10px; color: rgb(250,250,250); font-size: 22px; cursor: pointer;
-	}
-	.icon a #icon:hover{
-		color: rgb(209,209,209); transition: .5s;
-	}
-	body{
-		background: rgb(227,227,227);
-	}
-	.body{
-		width: 60%; height: 70vh; margin: 20px auto; display: block; background: rgb(250,250,250);
-		padding: 10px; border-radius: 20px;
-	}
-	.body-box1{
-		width: 100%; height: 8vh; display: flex; justify-content: center; border-radius: 10px;
-		align-items: center; padding: 10px; margin: 0 auto; position: relative; box-shadow: 3px 3px 10px rgb(209,209,209);
-	}
-	#search{
-		height: 5vh; width: 60vh; padding: 0 15px; border-radius: 10px; outline: none; border: none; background: rgb(209,209,209);
-		position: sticky;
-	}
-	span{
-		font-size: 30px; margin: 0 -35px auto; cursor: pointer;
-	}
-	.Recherche{
-		margin: 10px; align-items: center;
-	}
-	.Recherche .resultat{
-		margin: 0 auto; padding: 0 10px; align-items: center; color: rgb(45,45,45); cursor: pointer; font-size: 22px;
-	}
-	.resultat:hover{
-		color: rgb(120,120,120); cursor: pointer; transition: .5s;
-	}
-	.foot{
-		width: 100%; height: 10vh; padding: 10px; margin: 0 auto; justify-content: center; align-items: center; display: flex;
-	}
-	.foot a{
-		padding: 0 10px; color: rgb(85,85,85); cursor: pointer; border-left: 1px solid rgb(180,180,180);
-	}
-	.foot .lg-foot #logo{
-		border-radius: 10px; border-left: none; margin: 0 50px; cursor: pointer;
+	ul li a:hover{
+		color: rgb(250,250,250); transition: all .5s;
 	}
 	#btn{
-		font-size: 40px; align-items: center; color: rgb(250,250,250); display: none;
+		color: rgb(250,250,250); font-size: 25px; display: none;
 	}
 	#check{
 		display: none;
 	}
-	@media(max-width: 594){
-		.head{
-			width: 100%; display: block; height: 30vh; justify-content: center;
+	@media(max-width: 347px){
+		.logo{
+			justify-content: center;
 		}
-		.menu ul{
-			display: block; width: -100%; left: 100%; top: 80px; right: 0;
-			background: rgb(85,85,85); position: fixed; height: 100vh;
-			transition: 7s;
+		.logo a{
+			margin-left: -130px;
 		}
-		.menu ul li{
-			padding: 10px;
+		#titre{
+			display: none;
 		}
-		.menu ul li a{
-			color: rgb(210,210,210); cursor: pointer;
+		nav ul{
+			display: block; width: 100%; height: 40vh; background: rgb(0, 0, 12);
+			position: fixed; left: -100%; right: 0; top: 40px; transition: 5s;
+		}
+		ul li{
+			padding: 10px 10px;
+		}
+		ul li a{
+			border-left: 1px solid red; cursor: pointer;
 		}
 		#btn{
-			display: block;
+			display: block; margin-left: -100px;
 		}
-		#check{
-			display: block;
-		}
-		.body{
-			width: 100%; box-sizing: border-box; margin: 0 auto;
+		#check:checked ~ ul{
+			left: 0;
 		}
 	}
 </style>

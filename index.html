@@ -14,6 +14,8 @@
 			<a href="index.html"><img src="logo.jpg" width="150px" height="80px"></img></a>
 		</div>
 		<div class="menu">
+			<input type="checkbox" id="check" name="">
+		<label for="check" id="btn"><ion-icon name="reorder-three"></ion-icon></label>
 			<ul>
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="support.html">Supports</a></li>
@@ -116,5 +118,33 @@
 	}
 	.foot .lg-foot #logo{
 		border-radius: 10px; border-left: none; margin: 0 50px; cursor: pointer;
+	}
+	#btn{
+		font-size: 40px; align-items: center; color: rgb(250,250,250); display: none;
+	}
+	#check{
+		display: none;
+	}
+	@media(max-width: 1200){
+		.head{
+			width: 100%; display: block; height: 30vh; justify-content: center;
+		}
+		.menu ul{
+			display: block; width: 100%; left: 100%; top: 80px; right: 0;
+			background: rgb(85,85,85); position: fixed; height: 100vh;
+			transition: 7s;
+		}
+		.menu ul li{
+			padding: 10px;
+		}
+		.menu ul li a{
+			color: rgb(210,210,210); cursor: pointer;
+		}
+		#btn{
+			display: block;
+		}
+		#check{
+			display: block;
+		}
 	}
 </style>

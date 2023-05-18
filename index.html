@@ -23,6 +23,13 @@
 						<li><a href="">Note</a></li>
 					</ul>
 				</nav>
+				<div class="resultat">
+					<div class="barre">
+						<input type="search" id="search" name="" value="" placeholder="Rechercher ici..." autofocus>
+						<input type="button" id="button" value="Search">
+					</div>
+					<div class="box"></div>
+				</div>
 		</div>
 	</body>
 </html>
@@ -56,6 +63,16 @@
 	}
 	#check{
 		display: none;
+	}
+	.barre{
+		margin: 0 auto; border-bottom: 1px solid rgb(180, 180, 180);
+		width: 95%; height: 10vh; display: flex; justify-content: center; align-items: center;
+	}
+	#search{
+		width: 60vh; height: 5vh; border: 1px solid rgb(0, 0, 12); outline: none; padding: 0 10px;
+	}
+	#button{
+		padding: 8px; outline: none; margin: 0 auto; border: none; color: rgb(209,209,209); background: rgb(0, 0, 12); font-weight: bold;
 	}
 	@media(max-width: 594px){
 		.logo{

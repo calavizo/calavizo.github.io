@@ -21,7 +21,7 @@
                 <span id="icon" onclick="ouvrirPage()"><ion-icon name="search-outline"></ion-icon></span>
             </div>
         </div>
-        <article>
+        <section>
             <div class="contenu">
                 <h4>Service scout</h4>
                 <div class="_contenu">
@@ -50,7 +50,7 @@
                     <strong>Formation en couture</strong>
                 </div>
             </div>
-        </article>
+        </section>
         <div class="principal">
             <h2>ZANGBETO</h2>
             <p class="strong"><strong id="tail">History </strong> Viewed on Wikipedia.com</p>
@@ -121,11 +121,8 @@
     span{
         color: rgb(0, 63, 199); font-size: 20px; cursor: pointer;
     }
-    article{
-        width: 100%; height: 20vh; display: flex; flex-direction: row; flex-flow: wrap; margin: 10px auto; justify-content: space-around;
-    }
     section{
-        width: 100%; display: flex; margin: 0 auto; height: auto; justify-content: space-around; flex-direction: row; flex-flow: wrap;
+        width: 100%; display: flex; margin: 0 auto; height: auto; justify-content: space-around;
     }
     .box{
         width: 20%; height: 200px; display: block; margin: 5px 3px; padding: 10px;
@@ -150,10 +147,10 @@
             width: 70%; box-sizing: border-box;
         }
         article{
-            height: 100vh; box-sizing: border-box;
+            margin: 0 auto; box-sizing: border-box; display: block; width: 70%;
         }
         section{
-            height: 100vh; box-sizing: border-box;
+            width: 70%; height: auto; margin: 0 auto; box-sizing: border-box; display: block;
         }
         #search{
             width: 300px;
@@ -162,20 +159,17 @@
     ._box_contenu{
         width: 100%; margin: 0 auto; height: auto;
     }
+    .contenu{
+        width: 95%; align-items: center; margin: 10px;
+    }
     ._contenu{
-        display: flex; align-items: center; height: 10vh; background: rgb(250,250,250); padding: 10px;
+        display: flex; align-items: center; height: 10vh; background: rgb(250,250,250); padding: 10px; width: 100%;
     }
     ._contenu img{
         border-radius: 50px; margin: 0 5px;
     }
-    .contenu h4{
-        padding: 0 8px; margin-bottom: 5px; border-left: 2px solid rgb(0, 63, 199); color: rgb(41, 41, 41);
-    }
-    .contenu{
-        margin: 10px; height: 5vh;
-    }
     .principal{
-        margin: 0 auto; width: 80%; height: 100vh; background: linear-gradient(rgba(0,0,50,0.6),rgba(0,0,50,0.6)),url(vodou.jpg) no-repeat;
+        justify-content: center; display: block; margin: 0 auto; width: 80%; height: 100vh; background: linear-gradient(rgba(0,0,50,0.6),rgba(0,0,50,0.6)),url(vodou.jpg) no-repeat;
     }
     .line{
         margin: 10px auto 5px; width: 100%; border-top: 1px solid rgb(202, 202, 202);
@@ -201,7 +195,7 @@
         background: rgba(0,0,50,0.6); z-index: 1; align-items: center; padding: 10px;
     }
     .search{
-        width: 100%; align-items: center; display: flex; justify-content: center; padding: 10px; margin: 0 auto; flex-direction: row; flex-flow: wrap;
+        width: 100%; align-items: center; display: flex; justify-content: center; padding: 10px; margin: 0 auto;
     }
     #search{
         border: none; border-radius: 5px; padding: 0 10px; width: 60vh; height: 5vh; outline: none;

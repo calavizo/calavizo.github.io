@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="head-page">
-        <input type="checkbox" name="" id="btn">
         <div class="logo">
             <img src="logo.png" alt="" id="photo" width="50px" height="50px">
             <a href="index.html" id="logo">Light <span id="titre">Source</span></a>
@@ -19,7 +18,7 @@
                 <a href="" id="icon_menu"><i class="ri-search-2-line"></i></a>
                 <a href="" class="icon_menu"><input type="search" name="" id="result" placeholder="Texts..." autofocus></a>
             </div>
-
+            <input type="checkbox" name="" id="btn">
             <ul id="menu">
                 <li><a href="index.html" id="items">Home</a></li>
                 <li><a href="" id="items">Call us</a></li>
@@ -95,19 +94,12 @@
         text-decoration: none; cursor: pointer; font-size: 20px; color: rgb(0, 0, 0); margin-right: -25px; position: relative;
     }
     @media(max-width: 954px){
-        .menu{
-            display: block; width: 50%; height: 100vh; position: fixed; left: -100%; transition: all .5s;
-            top: 50px; justify-content: space-around; margin: 0 auto; background: rgb(75, 75, 75);
-        }
         
-        .icon{
-            justify-content: center; width: 100%; height: 8vh; left: 0; right: 0;
-            align-items: center; margin: 0 auto; border-bottom: 1px solid rgb(201, 201, 201);
+        .menu #menu{
+            display: flex; width: 100%; height: 10vh; position: fixed; left: -100%; transition: all .7s;
+            top: 50px; background: rgb(75, 75, 75); margin: 0 auto;
         }
-        .icon .icon_menu #result{
-            width: 200px;
-        }
-        #btn:checked ~ .menu{
+        #btn:checked ~ #menu{
             left: 0%;
         }
     }

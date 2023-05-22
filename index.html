@@ -11,6 +11,7 @@
 <body id="content">
     <div class="head-page">
         
+
         <div class="logo">
             <img src="logo.png" alt="" id="photo" width="50px" height="50px">
             <a href="index.html" id="logo">Light <span id="titre">Source</span></a>
@@ -19,6 +20,8 @@
             <a href="" id="icon_menu"><i class="ri-search-2-line"></i></a>
             <a href="" class="icon_menu"><input type="search" name="" id="result" placeholder="Texts..." autofocus></a>
         </div>
+
+
         <input type="checkbox" name="" id="btn">
         <div class="menu">
             
@@ -27,9 +30,70 @@
                 <li><a href="" id="items">Call us</a></li>
                 <li><a href="" id="items">Mark</a></li>
             </ul>
+
+
+                
+<div class="menu_link">
+
+
+    <div class="link">
+        <div class="box-link">
+            <a href="" id="icon-links"><i class="ri-map-2-fill"></i></a>
+                    <a href="" id="box-links">Seat</a>
+        </div>
+        <div class="box-link">
+            <a href="" id="icon-links"><i class="ri-file-download-fill"></i></a>
+                    <a href="" id="box-links">Files</a>
+        </div>
+        <div class="box-link">
+            <a href="" id="icon-links"><i class="ri-file-mark-fill"></i></a>
+                    <a href="" id="box-links">Supports</a>
+        </div>
+        <div class="box-link">
+            <a href="" id="icon-links"><i class="ri-numbers-fill"></i></a>
+                    <a href="" id="box-links">Members</a>
+        </div>
+             </div>
+
+
+
+
+        <div class="group">
+            <div class="box-group">
+                <a href="" id="icon-group"><i class="ri-youtube-fill"></i></a>
+                    <a href="" id="box-group">Youtube</a>
+            </div>
+            <div class="box-group">
+                <a href="" id="icon-group"><i class="ri-phone-fill"></i></a>
+                    <a href="tel: +221-77-293-7441" id="box-group">Call us</a>
+            </div>
+            <div class="box-group">
+                <a href="" id="icon-group"><i class="ri-instagram-fill"></i></a>
+                    <a href="" id="box-group">Instagram</a>
+            </div>
+            <div class="box-group">
+                <a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" id="icon-group"><i class="ri-whatsapp-fill"></i></a>
+                    <a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" id="box-group">WhatsApp</a>
+            </div>
+            <div class="photo_group">
+                <div class="box_photo">
+                    <img src="WhatsApp Image 2023-05-18 à 16.34.13.jpg" alt="" id="photo_group" width="100px" height="80px">
+                </div>
+                <div class="Me">
+                    <h4>Author's</h4>
+                    <p>link for Author's 👉   <a href="mailto:nkouka333@gmail.com" id="Me"><i class="ri-message-2-fill"></i></a></p>
+                    <h4>Developer</h4>
+                    <p>link for Developer 👉  <a href="mailto:soussoujadis35@gmail.com" id="Me"><i class="ri-message-2-fill"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+            
             
         </div>
-            <label class="btn" for="btn"><i class="ri-menu-add-fill"></i></label>
+            <label class="btn" for="btn"><i class="ri-menu-3-fill"></i></label>
     </div>
 </body>
 </html>
@@ -66,7 +130,7 @@
         cursor: pointer;
     }
     #titre{
-        color: rgb(29, 29, 235); cursor: pointer; font-size: 20px;
+        color: rgb(214, 176, 8); cursor: pointer; font-size: 20px;
     }
     .menu{
         display: flex; align-items: center; padding: 10px; height: 50px; margin: 0 auto; justify-content: space-between;
@@ -95,6 +159,9 @@
     #icon_menu{
         text-decoration: none; cursor: pointer; font-size: 20px; color: rgb(0, 0, 0); margin-right: -25px; position: relative;
     }
+    .menu_link{
+        display: none;
+    }
     @media(max-width: 954px){
         .logo{
             width: 0%;
@@ -103,14 +170,59 @@
             display: none;
         }
         .menu{
-            display: block; width: 50%; height: 100vh; position: fixed; left: -100%; transition: all .7s;
+            display: block; width: 80%; height: 100vh; position: fixed; left: -100%; transition: all .7s;
             top: 50px; background: rgb(0, 0, 0); margin: 0 auto;
         }
         .menu #menu{
-            display: block;
+            display: block; width: 100%; margin: 0 auto 40px; position: static; text-align: left; padding: 0 10px;
         }
         #btn:checked ~ .menu{
             left: 0%;
+        }
+        .group{
+            display: block; width: 100%; position: sticky; top: 0; height: 50vh; border-top: 1px solid rgb(214, 176, 8); padding: 10px;
+        }
+        .group .box-group{
+            display: flex; align-items: center; padding: 5px; width: 100%; margin: 0 auto;
+        }
+        .group .box-group #box-group{
+            text-decoration: none; font-size: 15px; color: rgb(201, 201, 201); cursor: pointer; padding: 0 5px;
+        }
+        .group .box-group #icon-group{
+            text-decoration: none; font-size: 20px; color: rgb(214, 176, 8); cursor: pointer; font-weight: 700; float: left;
+        }
+        .link{
+            display: flex; align-items: center; justify-content: center; width: 100%; position: sticky; top: 0; margin: 0 auto 10px; height: 5vh;
+        }
+        .link .box-link{
+            display: flex; align-items: center; padding: 5px;
+        }
+        .box-link #icon-links{
+            text-decoration: none; color: rgb(214, 176, 8); cursor: pointer; font-size: 17px; float: left;
+        }
+        .box-link #box-links{
+            text-decoration: none; color: rgb(250, 250, 250); cursor: pointer; font-size: 15px; padding: 0 5px;
+        }
+        .menu_link{
+            display: block; width: 100%; justify-content: space-around; margin: 0 auto; position: sticky;
+        }
+        .Me{
+            display: block; align-items: center; width: 100%; height: 10vh; position: sticky; margin: 0 auto; padding: 10px;
+        }
+        .Me h4{
+            margin: 5px auto; padding: 0 10px; border-left: 2px solid rgb(214, 176, 8); color: rgb(230,230,230);
+        }
+        .Me p{
+            color: rgb(201, 201, 201);
+        }
+        .Me #Me{
+            cursor: pointer; color: rgb(214, 176, 8); font-size: 17px; text-decoration: none;
+        }
+        .photo_group{
+            width: 100%; height: auto; margin: 5px auto; position: sticky;
+        }
+        .photo_group .box_photo{
+            width: 100%; align-items: center; padding: 10px; margin: 0 auto;
         }
     }
 </style>

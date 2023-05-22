@@ -9,12 +9,13 @@
 </head>
 <body>
     <div class="head-page">
-        <input type="checkbox" name="" id="btn">
+        
         <div class="logo">
             <img src="logo.png" alt="" id="photo" width="50px" height="50px">
             <a href="index.html" id="logo">Light <span id="titre">Source</span></a>
         </div>
         <div class="menu">
+            <input type="checkbox" name="" id="btn">
             <div class="icon">
                 <a href="" id="icon_menu"><i class="ri-search-2-line"></i></a>
                 <a href="" class="icon_menu"><input type="search" name="" id="result" placeholder="Texts..." autofocus></a>
@@ -98,14 +99,14 @@
         .logo{
             width: 0%;
         }
-        .head-page{
-            width: initial;
+        #logo{
+            display: none;
         }
-        .menu{
+        .menu #menu{
             display: block; width: 100%; height: 100vh; position: fixed; left: -100%; transition: all .7s;
-            top: 50px; background: rgb(75, 75, 75); margin: 0 auto; justify-content: space-around;
+            top: 50px; background: rgb(75, 75, 75); margin: 0 auto;
         }
-        #btn:checked ~ .menu{
+        #btn:checked ~ #menu{
             left: 0%;
         }
     }

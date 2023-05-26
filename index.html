@@ -4,263 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightSource</title>
-    <link rel="icon" href="logo.png">
+    <title>Document</title>
+    <link rel="icon" href="logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body id="content">
-    <div class="head-page">
-        
+<body class="contenu">
 
+    <div class="Entete">
         <div class="logo">
-            <img src="logo.png" alt="" id="photo" width="50px" height="45px">
-            <a href="index.html" id="logo">Light <span id="titre">Source</span></a>
-        </div>
-        <div class="icon">
-            <a href="" id="icon_menu"><i class="ri-search-2-line"></i></a>
-            <a href="" class="icon_menu"><input type="search" name="" id="result" placeholder="Texts..." autofocus></a>
+            <a href="" id="il">
+                <img src="logo.jpg" width="60px" height="60px">
+            </a>
+            <a href="" id="l">Light<span>Source</span></a>
+            <div class="b">
+                <a href="" id="b">
+                    <input type="text" name="" id="ba" placeholder="Demandez tout ici..." autofocus>
+                </a>
+                <a href="" id="s"><input type="button" id="buton" value="Recherche"></a>
+            </div>
         </div>
 
 
-        <input type="checkbox" name="" id="btn">
+        <style>
+            .Entete{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                height: 80px;
+                background: #fff;
+                border-bottom: 1px solid lavender;
+                top: 0;
+                padding: 5px;
+                margin: 0 auto;
+                position: sticky;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #il{
+                text-decoration: none;
+            }
+            #l{
+                text-decoration: none;
+                font-size: 30px;
+                color: rgb(31, 157, 216);
+                font-weight: lighter;
+                padding: 0 10px;
+            }
+            #l span{
+                text-decoration: none;
+                font-size: 35px;
+                color: rgb(31, 157, 216);
+                font-weight: lighter;
+            }
+            .b{
+            display: flex;
+            align-items: center;
+        }
+        #b{
+            text-decoration: none;
+        }
+        #ba{
+            width: 40vh;
+            height: 8vh;
+            outline: none;
+            border: none;
+            padding: 0 10px;
+            background: rgba(207, 207, 207, 0.541);
+        }
+        #s{
+            text-decoration: none;
+        }
+        #buton{
+            padding: 17px;
+            color: rgba(1, 1, 39, 0.753);
+            border: none;
+            outline: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        </style>
+
+
+
         <div class="menu">
-            
-            <ul id="menu">
-                <li><a href="index.html" id="items">Home</a></li>
-                <li><a href="" id="items">Inscription</a></li>
-                <li><a href="choose.html" id="items">Formations</a></li>
-            </ul>
-
-
+            <ul>
+                <li><a href="" id="i">Services</a></li>
+                <li><a href="" id="i">Appelez-nous</a></li>
+                <li><a href="" id="i">A propos de nous</a></li>
                 
-<div class="menu_link">
-
-
-    <div class="menu_derouland">
-
-        <div class="box_menu_derouland">
-            <img src="logo.png" alt="" width="90px" height="80px" id="logo-menu">
+            </ul>
         </div>
-        <div class="box_menu_derouland">
-            <h4 id="titre_menu_derouland">Light<span id="colour">Source</span></h4>
-            <p><a href="choose.html">Training or formations</a></p>
-            <p><a href="">Help</a></p>
-        </div>
+
+        <style>
+            @media(max-width:954px){
+        .logo{
+            display: block;
+            justify-content: center;
+            text-align: center;
+        }
+        .Entete{
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 20vh;
+            justify-content: center;
+            box-shadow: 2px 2px 5px rgba(207, 207, 207, 0.541);
+        }
+        .b{
+            justify-content: center;
+        }
+        .menu{
+            display: none;
+        }
+        .ba{
+            width: 95%;
+        }
+    }
+            .menu ul{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+            }
+            .menu ul li #i{
+                color: rgba(1, 1, 70, 0.849);
+                font-size: 20px;
+                cursor: pointer;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+            .menu ul li #i:hover{
+                color: rgb(31, 157, 216);
+                transition: .4s;
+            }
+            .ba{
+            width: 95%;
+            height: 100vh;
+            margin: 20px auto;
+            padding: 4px;
+            background: rgb(240, 240, 240);
+        }
+        </style>
+    </div>
+    <!-- debut contenu du prog -->
+    <div class="ba">
+
+        
     </div>
 
-    <div class="link">
-        <div class="box-link">
-            <a href="" id="icon-links"><i class="ri-map-2-fill"></i></a>
-                    <a href="" id="box-links">Seat</a>
-        </div>
-        <div class="box-link">
-            <a href="" id="icon-links"><i class="ri-file-download-fill"></i></a>
-                    <a href="" id="box-links">Files</a>
-        </div>
-        <div class="box-link">
-            <a href="" id="icon-links"><i class="ri-file-mark-fill"></i></a>
-                    <a href="" id="box-links">Supports</a>
-        </div>
-        <div class="box-link">
-            <a href="" id="icon-links"><i class="ri-shield-user-fill"></i></a>
-                    <a href="" id="box-links">Members</a>
-        </div>
-             </div>
 
-
-
-
-        <div class="group">
-            <div class="box-group">
-                <a href="" id="icon-group"><i class="ri-youtube-fill"></i></a>
-                    <a href="" id="box-group">Youtube</a>
-            </div>
-            <div class="box-group">
-                <a href="" id="icon-group"><i class="ri-phone-fill"></i></a>
-                    <a href="tel: +221-77-293-7441" id="box-group">Call us</a>
-            </div>
-            <div class="box-group">
-                <a href="" id="icon-group"><i class="ri-instagram-fill"></i></a>
-                    <a href="" id="box-group">Instagram</a>
-            </div>
-            <div class="box-group">
-                <a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" id="icon-group"><i class="ri-whatsapp-fill"></i></a>
-                    <a href="https://wa.me/qr/OPYI5KEVSQ7RJ1" id="box-group">WhatsApp</a>
-            </div>
-            <div class="photo_group">
-                <div class="box_photo">
-                    <img src="WhatsApp Image 2023-05-18 à 16.34.13.jpg" alt="" id="photo_group" width="100px" height="80px">
-                    <img src="WhatsApp.jpg" alt="" id="photo_group" width="100px" height="80px">
-                    <img src="WhatsApp Image.jpg" alt="" id="photo_group" width="100px" height="80px">
-                </div>
-                <div class="Me">
-                    <h4>Author's</h4>
-                    <a href="mailto:nkouka333@gmail.com" id="Me">👉 <i class="ri-message-2-fill"></i></a>
-                    <h4>Developer</h4>
-                    <a href="mailto:soussoujadis35@gmail.com" id="Me">👉 <i class="ri-message-2-fill"></i></a>
-                </div>
-            </div>
-        </div>
-
-</div>
-
-            
-            
-        </div>
-            <label class="btn" for="btn"><i class="ri-menu-3-fill"></i></label>
-    </div>
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
+    .contenu{
+        background: linear-gradient(rgba(0,0,50,0.4),rgba(0,0,50,0.4)),url(Textured-Backgrounds.jpg);
+    }
     *{
-        margin: 0; padding: 0; box-sizing: border-box; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .head-page{
-        display: flex; align-items: center; justify-content: space-around; width: 100%;
-        align-items: center; background: rgb(0, 0, 0); position: sticky; top: 0; height: 50px; right: 0;
-    }
-    .logo{
-        display: flex; align-items: center; height: 50px; margin: 0 auto; justify-content: center;
-    }
-    #logo{
-        text-decoration: none; color: rgb(230,230,230); cursor: pointer; font-size: 20px;
-    }
-    #photo{
-        cursor: pointer;
-    }
-    #titre{
-        color: rgb(214, 176, 8); cursor: pointer; font-size: 20px;
-    }
-    .menu{
-        display: flex; align-items: center; padding: 10px; height: 50px; margin: 0 auto; justify-content: space-between;
-    }
-    .menu #menu{
-        display: flex; align-items: center; margin: 10px; list-style: none;
-    }
-    #menu li #items{
-        color: rgb(250, 250, 250); text-decoration: none; padding: 0 10px; cursor: pointer;
-    }
-    #menu li #items:hover{
-        color: rgb(201, 201, 201); cursor: pointer; transition: .4s;
-    }
-    #btn{
-        display: none;
-    }
-    .btn{
-        font-size: 20px; font-weight: bold; cursor: pointer; color: rgb(250,250,250); margin-right: 15px; display: none;
-    }
-    .icon{
-        display: flex; align-items: center;
-    }
-    .icon_menu #result{
-        width: 250px; height: 30px; border: none; outline: none; padding: 0 30px; border-radius: 10px; background: rgb(230,230,230);
-    }
-    #icon_menu{
-        text-decoration: none; cursor: pointer; font-size: 20px; color: rgb(0, 0, 0); margin-right: -25px; position: relative;
-    }
-    .menu_link{
-        display: none;
-    }
-    @media(max-width: 954px){
-        .logo{
-            width: 0%;
-        }
-        .btn{
-            display: block;
-        }
-        .icon{
-            display: none;
-        }
-        .menu #menu{
-            display: none;
-        }
-        .menu{
-            display: block; width: 100%; height: 100vh; position: fixed; left: -100%; transition: all .7s;
-            top: 50px; background: rgb(0, 0, 0); margin: 0 auto;
-        }
-        .menu .menu_link{
-            display: block; width: 100%; margin: 0 auto 20px; position: static; text-align: left; padding: 0 10px;
-        }
-        #btn:checked ~ .menu{
-            left: 0%;
-        }
-        .group{
-            display: block; width: 100%; position: sticky; top: 0; height: 50vh; border-top: 1px solid rgb(214, 176, 8); padding: 10px;
-        }
-        .group .box-group{
-            display: flex; align-items: center; padding: 5px; width: 100%; margin: 0 auto;
-        }
-        .group .box-group #box-group{
-            text-decoration: none; font-size: 15px; color: rgb(201, 201, 201); cursor: pointer; padding: 0 5px;
-        }
-        .group .box-group #icon-group{
-            text-decoration: none; font-size: 20px; color: rgb(214, 176, 8); cursor: pointer; font-weight: 700; float: left;
-        }
-        .link{
-            display: flex; align-items: center; justify-content: center; width: 100%; position: sticky; top: 0; margin: 0 auto 10px; height: 5vh;
-        }
-        .link .box-link{
-            display: flex; align-items: center; padding: 5px;
-        }
-        .box-link #icon-links{
-            text-decoration: none; color: rgb(214, 176, 8); cursor: pointer; font-size: 17px; float: left;
-        }
-        .box-link #box-links{
-            text-decoration: none; color: rgb(250, 250, 250); cursor: pointer; font-size: 15px; padding: 0 5px;
-        }
-        .menu_link{
-            display: block; width: 100%; justify-content: space-around; margin: 0 auto; position: sticky;
-        }
-        .Me{
-            display: flex; align-items: center; width: 100%; height: 10vh; position: sticky; margin: 0 auto; padding: 10px;
-        }
-        .Me h4{
-            margin: 5px auto; padding: 0 10px; border-left: 2px solid rgb(214, 176, 8); color: rgb(230,230,230);
-        }
-        .Me #Me{
-            cursor: pointer; color: rgb(214, 176, 8); font-size: 17px; text-decoration: none;
-        }
-        .photo_group{
-            width: 100%; height: auto; margin: 5px auto; position: sticky; display: block;
-        }
-        .photo_group .box_photo{
-            width: 100%; align-items: center; padding: 10px; margin: 0 auto; display: flex; justify-content: space-between;
-        }
-        .box_photo #photo_group{
-            margin: 0 5px; border-radius: 10px;
-        }
-        .menu_derouland{
-            display: flex; align-items: center; width: 100%; position: sticky; padding: 10px; margin: 0 auto; justify-content: center;
-        }
-        .menu_derouland .box_menu_derouland{
-            margin: 0 5px;
-        }
-        .box_menu_derouland #titre_menu_derouland{
-            color: rgb(230,230,230); font-size: 30px;
-        }
-        .box_menu_derouland #colour{
-            color: rgb(214, 176, 8); font-size: 25px;
-        }
-        .box_menu_derouland #logo-menu{
-            border-radius: 10px;
-        }
-        .box_menu_derouland p,a{
-            text-decoration: none; color: rgb(201, 201, 201); cursor: pointer;
-        }
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        z-index: 1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 </style>

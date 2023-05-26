@@ -48,16 +48,10 @@
         <!-- l3 end -->
 
         <div class="design-contenu">
-
-        </div>
-        <div class="design-contenu1">
-            
-        </div>
-        <div class="design-contenu2">
-            
-        </div>
-        <div class="design-contenu3">
-            
+            <h4 id="h">Welcome to Light Source</h4>
+            <p id="t-t">Visiter nos services</p>
+            <p id="p">Un site internet essentiel pour les jeunes et adultes dans l'apprentissage du scoutisme et bien d'autres tels que: la formation en informatique, en couture, en cuisine...</p>
+            <br><p id="te">Merci de visiter notre site<span id="t">!</span></p>
         </div>
 
     </div>
@@ -65,20 +59,39 @@
 </html>
 
 <style>
-
-    .design-contenu{
-        width: 95%;
-        padding: 10px;
-        height: 100vh;
-        margin: 10px auto;
-        background: rgba(250, 250, 250, 0.39);
+    #t-t{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
     }
-    .design-contenu1{
+    #p{
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+    }
+    #te{
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+    }
+    #t{
+        font-style: italic;
+    }
+    #h{
+        padding-top: 100px;
+        color: rgba(1, 1, 39, 0.753);
+        font-size: 80px;
+        text-align: center;
+    }
+    .design-contenu{
         width: 100%;
         padding: 10px;
-        height: 50vh;
-        margin: 10px auto;
-        background: #000; 
+        height: 100vh;
+        margin: 0 auto;
+        background: rgba(250, 250, 250, 0.39);
+        position: fixed;
+        padding: 20px;
+        justify-content: center;
     }
 
 
@@ -94,6 +107,7 @@
         position: sticky;
         margin: 0 auto;
         background: rgba(250, 250, 250, 0.842);
+        display: none;
     }
     #i1,#i1{
         text-decoration: none;
@@ -184,7 +198,17 @@
             width: 95%;
         }
         .design-contenu{
-            height: 50vh;
+            height: 80vh;
+            width: 100%;
+        }
+        .l3{
+            display: flex;
+        }
+        #h{
+            font-size: 30px;
+        }
+        #t-t,#p,#te{
+            font-size: 20px;
         }
 .b{
     display: none;
@@ -217,10 +241,9 @@
     .ba-contenu{
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto 0;
         position: sticky;
         top: 0;
-        background: linear-gradient(rgba(0,0,50,0.4),rgba(0,0,50,0.4)),url(Textured-Backgrounds.jpg);
     }
 *{
 margin: 0;
@@ -228,5 +251,8 @@ padding: 0;
 box-sizing: border-box;
 z-index: 1;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenu{
+    background: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.4));   
 }
 </style>

@@ -13,44 +13,44 @@
         </a>
             <a href="index.html" id="logo">Light<span>Source</span></a>
     </div>
-    <div class="Contenu_de_page">
-        <div class="line">
-            <h2>Nos services</h2>
-        </div>
-        <div class="contenu">
-            <div class="box">
-                <p id="t">S</p>
-                <a href="service.html" id="lie">Formation scoute</a>
-            </div>
-            <div class="box">
-                <p id="t">C</p>
-                <a href="service.html" id="lie">Formation en cuisine</a>
-            </div>
-            <div class="box">
-                <p id="t">I</p>
-                <a href="service.html" id="lie">Formation en informatique</a>
-            </div>
-            <div class="box">
-                <p id="t">C</p>
-                <a href="service.html" id="lie">Formation en couture</a>
-            </div>
-        </div>
-        <div class="li">
-            <p>Merci de visiter notre page web.</p>
-        </div>
+    <div class="inf">
+        <h3>Welcome to light Source service</h3>
+        <p id="inf">Faire le choix en dessous</p>
     </div>
+<style>
+    .inf{
+        margin: 10px auto;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+    h3{
+        color: rgba(33, 248, 219, 0.979);
+    }
+</style>
+
+
+
     <div class="contact">
         <div class="line">
-            <h2>Contactez nous</h2>
+            <h2>Nos règles</h2>
         </div>
         <div class="box-contact">
             <div class="titre">
-                <p id="m">M</p>
-                <a href="mailto:calavizodemin@gmail.com" id="me">Envoyer un mail</a>
-            </div>
-            <div class="titre">
-                <p id="m">A</p>
-                <a href="" id="me">Appelez nous</a> 
+                <lh>|👉On ne fait pas des rites pour obtenir de l'argent.</lh>
+                <ul class="lis">
+                    <li>Garder toutes les informations requises;</li>
+                    <li>Respecter les heures d'activités;</li>
+                    <li>Ne pas venir en retard, de manière répéter;</li>
+                    <li>Ne prenez pas à autrui;</li>
+                    <li>Ne pas etre rancuner;</li>
+                    <li>Postuler pour un seul objectif.</li>
+                </ul>
+                <lh>NB:👉 nous ne faisons pas des rites pour des portefeuilles magique.</lh>
+                <br><br><lh>|👇Aide & Guide</lh>
+                <p id="tu">Contactez ce numéro pour les conseils <a href="tel:+242 06 819 21 94">06 819 21 94</a></p>
             </div>
             <p id="lir">Merci de choisir ce service<br>Pour tous vos besoin.</p>
         </div>
@@ -60,16 +60,18 @@
     </div>
     <div class="contact">
         <div class="line">
-            <h2>Suivez nous</h2>
+            <h2>Demandez un formulaire</h2>
         </div>
         <div class="box-contact">
             <div class="titre">
-                <p id="m">F</p>
-                <a href="https://www.facebook.com/profile.php?id=100092653188633" id="me">Page Facebook</a>
-            </div>
-            <div class="titre">
-                <p id="m">Y</p>
-                <a href="https://youtube.com/@ccdc299" id="me">Chaine Youtube</a> 
+                <p id="tu">Le formulaire est envoyer par mail ou SMS ou encore par lien messagerie social (Facebook,WhatsApp,..).</p>
+                <br><p id="tu">NB: si vous avez choisi par exemple: "Formation scout", vous aurez un formulaire de cette formation.</p><br>
+                <div class="hp">
+                        <a href="" id="hp">Formation Scoute</a>
+                        <a href="" id="hp">Formation Coututre</a>
+                        <a href="" id="hp">Formation Informatique</a>
+                        <a href="" id="hp">Formation Cuisine</a>
+                </div>
             </div>
             <p id="lir">Merci de choisir ce service<br>Pour tous vos besoin.</p>
         </div>
@@ -112,6 +114,21 @@
 
 
 <style>
+    .hp{
+        width: 100%;
+        height: 100px;
+        display: block;
+        justify-content: center;
+
+    }
+    #hp{
+        background: rgba(33, 248, 219, 0.979);
+        padding: 10px 15px;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        display: block;
+    }
     *{
         margin: 0;
         padding: 0;
@@ -171,6 +188,13 @@
         background: rgba(33, 248, 219, 0.979);
         justify-content: center;
         align-items: center;
+    }
+    #tu{
+        color: rgba(33, 248, 219, 0.979);
+    }
+    #tu a{
+        color: crimson;
+        cursor: pointer;
     }
     .line h2{
         color: #fff;
@@ -250,14 +274,17 @@
         justify-content: center;
     }
     .titre{
-        display: flex;
+        display: block;
         align-items: center;
-        width: 60%;
-        height: 20vh;
+        width: 98%;
+        height: 55vh;
         padding: 10px;
-        margin: 10px auto;
+        margin: 0 auto;
         border-radius: 10px;
         border: 1px solid rgba(33, 248, 219, 0.979);
+    }
+    .lis{
+        padding: 0 50px;
     }
     #m{
         background: rgba(33, 248, 219, 0.979);
@@ -359,7 +386,7 @@
         }
         .bot{
             position: sticky;
-            margin: 420px auto;
+            margin: 465px auto;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
         }

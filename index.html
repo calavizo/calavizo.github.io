@@ -9,6 +9,7 @@
 </head>
 <body class="principal">
     <div class="contenu">
+        <!-- begin html for nav -->
         <nav>
             <input type="checkbox" name="" id="btn">
             <label for="btn" id="menu"><i class="ri-menu-fill"></i></label>
@@ -18,7 +19,7 @@
                 </a>
             </div>
             <ul class="menu-lis">
-                <li><a href="" id="i2">Home</a></li>
+                <li><a href="" id="i2">Accueil</a></li>
                 <li><a href="" id="i2">Formations</a>
                     <ul>
                         <li><a href="" id="i">Formation scoute</a></li>
@@ -32,18 +33,19 @@
                 <li><a href="" id="i2">A propos</a></li>
             </ul>
             <div class="a">
-                <a href="" id="i3"><i class="ri-mail-fill"></i></a>
-            <a href="" id="i3"><i class="ri-phone-fill"></i></a>
+                <a href="mailto:calavizodemin@gmail.com" id="i3"><i class="ri-mail-fill"></i></a>
+            <a href="tel:+221-77-293-74-41" id="i3"><i class="ri-phone-fill"></i></a>
             <a href="" id="i3"><i class="ri-map-pin-fill"></i></a>
             </div>
         </nav>
 
+        <!-- begin html for onglet -->
 
         <div class="onglet">
             <div class="Se">
-                <label for="bar" id="buton"><i class="ri-search-line"></i></label>
-                <label for="buton" id="Pe"><input type="search" name="" id="Bar" placeholder="Demander ici..." required></label>
-                <label for="liste" id="buton2"><i class="ri-menu-add-line"></i>
+                <p id="buton"><i class="ri-search-line"></i></p>
+                <p id="Pe"><input type="search" name="" id="Bar" placeholder="Demander ici..." required></p>
+                <label for="" id="buton2"><i class="ri-menu-add-line"></i>
                 
                     <div class="liste">
  
@@ -51,24 +53,55 @@
                             <div class="fe">
                                      <a href="" id="i4">Cours en ligne</a>
                                      <a href="" id="i4">Cours en presentiel</a>
-                                     <a href="" id="i4">Cours scout écrits</a>
-                                     <a href="" id="i4">Cours scout pratique</a>
+                                     <a href="" id="i4">Examens en ligne</a>
+                                     <a href="" id="i4">Design de l'uniforme</a>
                              </div>
                              <div class="fe">
                                      <a href="" id="i5">Diplomes</a>
                                      <a href="" id="i5">Contrat</a>
                                      <a href="" id="i5">Renseignement</a>
-                                     <a href="" id="i5">Suivre</a>
+                                     <a href="" id="i5">Nous suivre</a>
                              </div>
                          </div>
                      </div>
-                 </label>
+                </label>
             </div>
+        </div>
+    
+    
+    
+    <div class="selct">
+        <p><strong>Light Source </strong>est un site internet de la communauté <strong>Calavi Zodemin</strong>. Elle, conçue en 2014, la communauté <strong>Calavi Zodemin</strong> est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire.
+             Aussi, elle met en place de diverses activités telles que:<br>
+             <strong>La formation scoute</strong>;<br>
+             <strong>La formation en informatique</strong>;<br>
+             <strong>La formation en cuisine</strong>;<br>
+             <strong>La formation en couture</strong>.
+            </p>
+            <p>Créant, d'une part, une troupe des jeunes scouts nommée : <strong>Troupe Dragon</strong>. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.</p>
+            <p><strong>Note:</strong> Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.</p>
+    </div>
+    <div class="lin">
+        
+    </div>
     </div>
 </body>
 </html>
 
 <style>
+    
+.selct{
+    width: 100%;
+    height: 50vh;
+    margin: 10px auto;
+    padding: 15px;
+    position: static;
+    display: block;
+    border-bottom: 1px solid rgb(209,209,209);
+}
+.selct p{
+    text-align: justify;
+}
     .fe #i4,#i5{
         display: block;
         font-size: 16px;
@@ -163,13 +196,20 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
+        position: static;
     }
     @media(max-width:1200px){
         .principal .contenu{
             width: 70%;
         }
+        .contenu .selct{
+            height: 50vh;
+        }
     }
     @media(max-width:840px){
+        .contenu .selct{
+            height: 70vh;
+        }
         nav #menu{
             display: flex;
             align-items: center;
@@ -225,6 +265,9 @@
         }
     }
     @media(max-width:720px){
+        .contenu .selct{
+            height: 70vh;
+        }
         nav{
             display: flex;
             align-items: center;
@@ -289,7 +332,7 @@
         background: #fff;
         margin: auto;
         position: static;
-        height: 150vh;
+        height: 200vh;
     }
     .principal{
         background: rgba(29, 29, 29, 0.133);

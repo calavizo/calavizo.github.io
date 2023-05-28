@@ -42,7 +42,7 @@
         <div class="onglet">
             <div class="Se">
                 <label for="bar" id="buton"><i class="ri-search-line"></i></label>
-                <label for="buton" id="Pe"><input type="search" name="" id="Bar" placeholder="Que voulez-vous trouver ici ?" required></label>
+                <label for="buton" id="Pe"><input type="search" name="" id="Bar" placeholder="Demander ici..." required></label>
                 <label for="liste" id="buton2"><i class="ri-menu-add-line"></i>
                 
                     <div class="liste">
@@ -164,6 +164,11 @@
         justify-content: center;
         padding: 10px;
     }
+    @media(max-width:1200px){
+        .principal .contenu{
+            width: 70%;
+        }
+    }
     @media(max-width:840px){
         nav #menu{
             display: flex;
@@ -178,7 +183,7 @@
             justify-content: space-between;
         }
         .Se #Bar{
-            width: 270px;
+            width: 400px;
         }
         .onglet{
             justify-content: center;
@@ -188,14 +193,14 @@
             position: sticky;
         }
         .liste{
-            margin: 0 -310px;
+            margin: 0 -320px;
             width: 350px;
         }
         .menu-lis{
             display: block;
             position: absolute;
             background: rgb(230, 230, 230);
-            top: 100px;
+            top: 90px;
             left: -100%;
             height: 100vh;
             margin: 0 auto;
@@ -229,7 +234,7 @@
             width: 100%;
         }
         .Se #Bar{
-            width: 270px;
+            width: 250px;
         }
         .onglet{
             justify-content: center;
@@ -239,7 +244,7 @@
             position: sticky;
         }
         .liste{
-            margin: 0 -310px;
+            margin: 0 -290px;
             width: 350px;
         }
         nav #menu{
@@ -251,7 +256,7 @@
             display: block;
             position: absolute;
             background: rgb(230, 230, 230);
-            top: 100px;
+            top: 90px;
             left: -100%;
             height: 100vh;
             margin: 0 auto;

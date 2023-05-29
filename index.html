@@ -68,7 +68,10 @@
             </div>
         </div>
     
-    
+        <div class="sect">
+            <h1>Bienvenuter</h1>
+            <p class="io">Explorer pour tous vos besoins</p>
+        </div>
     
     <div class="selct">
         <p><strong>Light Source </strong>est un site internet de la communauté <strong>Calavi Zodemin</strong>. Elle, conçue en 2014, la communauté <strong>Calavi Zodemin</strong> est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire.
@@ -81,15 +84,144 @@
             <p>Créant, d'une part, une troupe des jeunes scouts nommée : <strong>Troupe Dragon</strong>. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.</p>
             <p><strong>Note:</strong> Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.</p>
     </div>
-    <div class="lin">
-        
+    <div class="footer">
+        <div class="foot">
+            <div class="fo1">
+                <h3>Nous joindre</h3>
+                <form action="" method="post">
+                    <p id="ta"><input type="email" name="" id="mail" placeholder="Entrer votre adresse email" autofocus required></p>
+                    <p id="ta"><input type="button" id="sn" value="Subscribe"></p>
+                </form>
+                <h3>Nous suivre</h3>
+                <p class="t"><a href="" id="i7">Youtube</a></p>
+                <p class="t"><a href="" id="i7">Facebook</a></p>
+                <p class="t"><a href="" id="i7">Tik tok</a></p>
+            </div>
+            <div class="fo2">
+                <p><a href="" id="i6"><i class="ri-bank-card-2-fill"></i></a>Compte bancaire</p>
+                <p><a href="" id="i6"><i class="ri-movie-fill"></i></a>Vidéos d'activités</p>
+                <p><a href="" id="i6"><i class="ri-wechat-fill"></i></a>Envoyer un message</p>
+            </div>
+        </div>
+        <div class="foot2"></div>
     </div>
     </div>
 </body>
 </html>
 
 <style>
-    
+    .sect h1{
+        text-align: center;
+        font-size: 40px;
+        color: rgb(230, 230, 230);
+    }
+    .sect .io{
+        text-align: center;
+        font-size: 20px;
+        color: rgb(230, 230, 230);
+    }
+    .sect{
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 15px;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    border-bottom: 1px solid rgb(209,209,209);
+    background-image: linear-gradient(rgba(0,0,50,0.4),rgba(0,0,50,0.4)),url(WhatsApp\ Image\ 2023-05-29\ à\ 00.15.18.jpg);
+}
+    .fo2{
+        display: block;
+        padding: 10px;
+        align-items: center;
+    }
+    .fo2 p{
+        color: rgb(230, 230, 230);
+        align-items: center;
+        padding: 0 2px;
+    }
+    p #i6{
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 2px auto;
+        color: rgb(206, 26, 86);
+        cursor: pointer;
+    }
+    #i6:hover{
+        color: rgb(209,209,209);
+        transition: .4s;
+    }
+    .fo1{
+        display: block;
+        padding: 10px;
+    }
+    #i7{
+        text-decoration: none;
+        color: rgb(230, 230, 230);
+        cursor: pointer;
+        font-size: 17px;
+    }
+    #i7:hover{
+        color: rgb(206, 26, 86);
+        transition: .4s;
+    }
+    .t{
+        padding: 5px 0;
+    }
+    #mail{
+        width: 200px;
+        height: 30px;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        padding: 0 10px;
+    }
+    #sn{
+        padding: 6px;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        background: rgb(209,209,209);
+        cursor: pointer;
+        color: rgb(43,43,43);
+    }
+    #sn:hover{
+        background: rgb(206, 26, 86);
+        transition: .4s;
+        color: rgb(230, 230, 230);
+    }
+    #ta{
+        padding: 3px 0;
+    }
+    .fo1 h3{
+        color: #fff;
+        font-size: 20px;
+        padding: 0 0 5px;
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        background: rgb(43,43,43);
+        width: 100%;
+        height: 51vh;
+        margin: 10px auto;
+        position: static;
+    }
+    .foot{
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        height: 51vh;
+    }
+    .foot2{
+        display: block;
+        margin: 0  auto;
+        width: 70%;
+        height: 51vh;
+        background: rgb(206, 26, 86);
+    }
 .selct{
     width: 100%;
     height: 50vh;
@@ -265,8 +397,23 @@
         }
     }
     @media(max-width:720px){
+        .foot{
+            text-align: left;
+            height: 55vh;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .foot2{
+            height: 50vh;
+            margin: 0 auto;
+            width: 100%; 
+        }
+        .footer{
+            display: block;
+            height: auto;
+        }
         .contenu .selct{
-            height: 70vh;
+            height: 80vh;
         }
         nav{
             display: flex;
@@ -332,7 +479,7 @@
         background: #fff;
         margin: auto;
         position: static;
-        height: 200vh;
+        height: 170vh;
     }
     .principal{
         background: rgba(29, 29, 29, 0.133);

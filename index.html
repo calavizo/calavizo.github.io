@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lightsource</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body class="principal">
@@ -14,7 +14,7 @@
             <input type="checkbox" name="" id="btn">
             <label for="btn" id="menu"><i class="ri-menu-fill"></i></label>
             <div class="logo">
-                <a href="" id="i1">
+                <a href="index.html" id="i1">
                     <img src="logo2.jpg" alt="" id="logo" width="140px" height="35px">
                 </a>
             </div>
@@ -82,29 +82,100 @@
     <div class="footer">
         <div class="foot">
             <div class="fo1">
-                <h3>Nous joindre</h3>
+                <h3>S'abonner</h3>
                 <form action="" method="post">
                     <p id="ta"><input type="email" name="" id="mail" placeholder="Entrer votre adresse email" autofocus required></p>
                     <p id="ta"><input type="button" id="sn" value="Subscribe"></p>
                 </form>
                 <h3>Nous suivre</h3>
-                <p class="t"><a href="" id="i7">Youtube</a></p>
-                <p class="t"><a href="" id="i7">Facebook</a></p>
+                <p class="t"><a href="https://youtube.com/@ccdc299" id="i7">Youtube</a></p>
+                <p class="t"><a href="https://www.facebook.com/profile.php?id=100092653188633" id="i7">Facebook</a></p>
                 <p class="t"><a href="" id="i7">Tik tok</a></p>
             </div>
             <div class="fo2">
-                <p><a href="" id="i6"><i class="ri-bank-card-2-fill"></i></a>Compte bancaire</p>
-                <p><a href="" id="i6"><i class="ri-movie-fill"></i></a>Vidéos d'activités</p>
-                <p><a href="" id="i6"><i class="ri-wechat-fill"></i></a>Envoyer un message</p>
+                <p><a href="" id="i6"><i class="ri-bank-card-2-fill"></i></a></p>
+                <p><a href="" id="i6"><i class="ri-movie-fill"></i></a></p>
+                <p><a href="" id="i6"><i class="ri-wechat-fill"></i></a></p>
             </div>
         </div>
-        <div class="foot2"></div>
+        <div class="foot2">
+            <div class="fio">
+                <div class="fo">
+                    <h2>Services</h2>
+                         <a href="" id="i8">Cours en ligne</a>
+                         <a href="" id="i8">Cours en presentiel</a>
+                         <a href="" id="i8">Examens en ligne</a>
+                         <a href="" id="i8">Design de l'uniforme</a>
+                 </div>
+                 <div class="fo">
+                    <h2>Admission</h2>
+                         <a href="" id="i8">Diplomes</a>
+                         <a href="" id="i8">Contrat</a>
+                         <a href="" id="i8">Renseignement</a>
+                         <a href="" id="i8">Nous suivre</a>
+                 </div>
+             </div>
+        
+        <div class="Da">
+            <a href="" id="i9">Terms of use</a>
+            <a href="" id="i9">Privacy policy</a>
+            <a href="index.html" id="i9">Copyright2023.TroupeDragon</a>
+        </div>
+        </div>
     </div>
     </div>
 </body>
 </html>
 
 <style>
+    .Da{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        height: 10vh;
+        justify-content: center;
+    }
+    .Da #i9{
+        color: rgb(209,209,209);
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+    #i9:hover{
+        color: rgb(206, 26, 86);
+        cursor: pointer;
+        transition: .4s;
+    }
+    .fio{
+        display: flex;
+        width: 100%;
+        height: 40vh;
+        margin: 0 auto;
+    }
+    .fio .fo{
+        display: block;
+        width: 100%;
+        height: 40vh;
+        padding: 10px;
+    }
+    .fo h2{
+        color: #fff;
+        cursor: pointer;
+    }
+    .fo #i8{
+        display: block;
+        cursor: pointer;
+        color: rgb(209,209,209);
+        text-decoration: none;
+        padding: 10px 0;
+    }
+    #i8:hover{
+        color: rgb(206, 26, 86);
+        cursor: pointer;
+        transition: .3s;
+    }
     .fo2{
         display: block;
         padding: 10px;
@@ -117,7 +188,7 @@
     }
     p #i6{
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         margin: 0 2px auto;
         color: rgb(206, 26, 86);
         cursor: pointer;
@@ -193,11 +264,10 @@
         margin: 0  auto;
         width: 70%;
         height: 51vh;
-        background: rgb(206, 26, 86);
     }
 .selct{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     margin: 10px auto;
     padding: 15px;
     position: static;
@@ -369,6 +439,15 @@
         }
     }
     @media(max-width:720px){
+        .foot2 .Da{
+            display: block;
+            width: 100%;
+        }
+        .fio{
+            display: block;
+            width: 100%;
+            height: 75vh;
+        }
         .foot{
             text-align: left;
             height: 60vh;
@@ -376,7 +455,7 @@
             width: 100%;
         }
         .foot2{
-            height: 60vh;
+            height: 100vh;
             margin: 0 auto;
             width: 100%; 
         }

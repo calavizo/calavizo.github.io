@@ -52,10 +52,10 @@
  
                          <div class="fi">
                             <div class="fe">
-                                     <a href="forma.html" id="i4">Cours en ligne</a>
-                                     <a href="forma.html" id="i4">Cours en presentiel</a>
-                                     <a href="forma.html" id="i4">Examens en ligne</a>
-                                     <a href="forma.html" id="i4">Design de l'uniforme</a>
+                                <a href="forma.html" id="i4">Cours en ligne</a>
+                                <a href="forma.html" id="i4">Cours en presentiel</a>
+                                <a href="forma.html" id="i4">Examens en ligne</a>
+                                <a href="forma.html" id="i4">Design de l'uniforme</a>
                              </div>
                              <div class="fe">
                                      <a href="forma.html" id="i5">Diplomes</a>
@@ -70,15 +70,42 @@
         </div>
     
     <div class="selct">
-        <p><strong>Light Source </strong>est un site internet de la communauté <strong>Calavi Zodemin</strong>. Elle, conçue en 2014, la communauté <strong>Calavi Zodemin</strong> est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire.
-             Aussi, elle met en place de diverses activités telles que:<br>
-             <strong>La formation scoute</strong>;<br>
-             <strong>La formation en informatique</strong>;<br>
-             <strong>La formation en cuisine</strong>;<br>
-             <strong>La formation en couture</strong>.
-            </p>
-            <p>Créant, d'une part, une troupe des jeunes scouts nommée : <strong>Troupe Dragon</strong>. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.</p>
-            <p><strong>Note:</strong> Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.</p>
+       <div class="Re">
+        <div class="for">
+            <h4 id="ia">Sélectionner la formation souhaitée</h4>
+            <p><a href="cu.html" id="is">Cuisiner</a></p>
+            <p><a href="co.html" id="is">Couture</a></p>
+            <p><a href="sc.html" id="is">Scoutisme</a></p>
+            <p><a href="in.html" id="is">Informatique</a></p>
+            <p><a href="" id="is">Télécharger la brochure</a></p>
+            <h4 id="ia">Payer mes cours à distance</h4>
+            <p><a href="" id="is">Mobile money.</a></p>
+            <p><a href="" id="is">Airtel money.</a></p>
+            <p><a href="tel:+221-77-293-74-41" id="is">Orange money.</a></p>
+            <h4 id="ia">conseillé</h4>
+            <p class="a">Tel:+242-068192194</p>
+            <h4 id="ia">Guide aux programmes</h4>
+            <p class="a">Tel:+221-772937441</p>
+        </div>
+       </div>
+       <div class="Re2">
+        <p class="ia"><strong>Cours en ligne:</strong>Nous utilisons les applications et logiciels tels que:<br><em>Google Teams</em><em>Skype</em><em>Microsoft Meet</em>. L'emploi du temps est donné selon la disponibilité de l'abonné ou client.</p>
+        <p class="ia"><strong>Cours en presentiel:</strong>le suivi des cours s'éffectue tous les weekend's.</p>
+        <p class="ia"><strong>Examen en ligne:</strong>le logiciel et l'application autorisé est <em>Safe Exam Browser</em>.</p>
+        <p class="ia"><strong>Design de l'uniforme:</strong>Chaques catégories de formation proposent son uniforme. Cependant, nous exigeons le plus souvent celui du mouvement scoutisme.</p>
+        <p class="ia"><strong>Diplomes:</strong>il sont obtenus après le délai de la formation.</p>
+        <p class="ia"><strong>Renseignement:</strong>Pour tout information, nous disposons en service de tous nos clients et abonnés <em>le guide aux programmes & le conseillé</em></p>
+        <p class="ia"><strong>Recyclage:</strong>Pour toutes les formations suggérées, le recyclage se manifeste comme suit:
+        <ol>
+            <li>Choisir la formation souhaitée;</li>
+            <li>Choisir la catégorie de la formation;</li>
+            <li>Se renseigner auprès du conseillé et guide aux programmes;</li>
+            <li>Prendre rendez-vous auprès du Guide aux programmes;</li>
+            <li>Demander le contrat si possible;</li>
+            <li>Contacter le service de paiement.</li>
+        </ol>
+        </p>
+    </div>
     </div>
     <div class="footer">
         <div class="foot">
@@ -132,6 +159,32 @@
 </html>
 
 <style>
+    #ia{
+        font-size: 17px;
+        color: rgb(43,43,43);
+        cursor: pointer;
+    }
+    #is{
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(43,43,43);
+    }
+    #is:hover{
+        text-decoration: underline;
+        color: rgb(212, 31, 167);
+    }
+    p{
+        padding: 8px 0;
+    }
+    .Re .a{
+        cursor: pointer;
+    }
+    strong{
+        cursor: pointer;
+    }
+    .Re2 p{
+        text-align: justify;
+    }
     .Da{
         display: flex;
         align-items: center;
@@ -311,15 +364,30 @@
     }
 .selct{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     margin: 10px auto;
-    padding: 15px;
     position: static;
+    display: flex;
+}
+
+.Re{
+    width: 40%;
     display: block;
+    height: auto;
+    padding: 10px;
+    border-right: 2px solid rgb(209,209,209);
 }
-.selct p{
-    text-align: justify;
+.Re2{
+    width: 60%;
+    display: block;
+    height: auto;
+    padding: 10px;
 }
+ol{
+    padding: 0 20px;
+}
+
+
     .fe #i4,#i5{
         display: block;
         font-size: 16px;
@@ -482,6 +550,23 @@
         }
     }
     @media(max-width:720px){
+        .selct{
+            margin: 0 auto;
+            display: block;
+        }
+        .principal .contenu{
+            height: 350vh;
+        }
+        .Re{
+            border-right: none;
+            width: 100%;
+        }
+        .Re2{
+            height: auto;
+            margin: 10px auto 20px;
+            width: 100%;
+            border-top: 2px solid rgb(209,209,209);
+        }
         .foot2 .Da{
             display: block;
             width: 100%;
@@ -511,7 +596,7 @@
             height: auto;
         }
         .contenu .selct{
-            height: 100vh;
+            height: 170vh;
         }
         nav{
             display: flex;
@@ -578,7 +663,7 @@
         background: #fff;
         margin: auto;
         position: static;
-        height: 120vh;
+        height: 150vh;
     }
     .principal{
         background: rgba(29, 29, 29, 0.133);

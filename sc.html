@@ -58,10 +58,10 @@
                                      <a href="forma.html" id="i4">Design de l'uniforme</a>
                              </div>
                              <div class="fe">
-                                     <a href="forma.html" id="i5">Diplomes</a>
-                                     <a href="forma.html" id="i5">Contrat</a>
-                                     <a href="forma.html" id="i5">Renseignement</a>
-                                     <a href="forma.html" id="i5">Recyclage</a>
+                                <a href="forma.html" id="i5">Diplomes</a>
+                                <a href="forma.html" id="i5">Contrat</a>
+                                <a href="forma.html" id="i5">Renseignement</a>
+                                <a href="forma.html" id="i5">Recyclage</a>
                              </div>
                          </div>
                      </div>
@@ -70,15 +70,33 @@
         </div>
     
     <div class="selct">
-        <p><strong>Light Source </strong>est un site internet de la communauté <strong>Calavi Zodemin</strong>. Elle, conçue en 2014, la communauté <strong>Calavi Zodemin</strong> est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire.
-             Aussi, elle met en place de diverses activités telles que:<br>
-             <strong>La formation scoute</strong>;<br>
-             <strong>La formation en informatique</strong>;<br>
-             <strong>La formation en cuisine</strong>;<br>
-             <strong>La formation en couture</strong>.
-            </p>
-            <p>Créant, d'une part, une troupe des jeunes scouts nommée : <strong>Troupe Dragon</strong>. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.</p>
-            <p><strong>Note:</strong> Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.</p>
+       <div class="Re">
+        <div class="for">
+            <h4 id="ia">Sélectionner la formation souhaitée</h4>
+            <p><a href="cu.html" id="is">Cuisiner</a></p>
+            <p><a href="co.html" id="is">Couture</a></p>
+            <p><a href="sc.html" id="is">Scoutisme</a></p>
+            <p><a href="in.html" id="is">Informatique</a></p>
+            <p><a href="" id="is">Télécharger la brochure</a></p>
+            <h4 id="ia">Payer mes cours à distance</h4>
+            <p><a href="" id="is">Mobile money.</a></p>
+            <p><a href="" id="is">Airtel money.</a></p>
+            <p><a href="tel:+221-77-293-74-41" id="is">Orange money.</a></p>
+            <h4 id="ia">Conseillé</h4>
+            <p class="a">Tel:+242-068192194</p>
+            <h4 id="ia">Guide aux programmes</h4>
+            <p class="a">Tel:+221-772937441</p>
+        </div>
+       </div>
+       <div class="Re2">
+        <h4 id="ia2">Vous préférez cette formation:</h4>
+        <em>Le Scoutisme.</em>
+        <p class="ia">Détail à suivre pour votre choix:</p>
+        <p class="ia"><strong>Objectif:</strong>Nous savons tous que le scoutisme fait partie des activités les plus répandues au monde. En vertu de cela, nous formons les jeunes et adultes afin d'adherer aux petits metiers dans le monde professionnel et en avoir en connaissance quelques pincipes de base de la vie sociale.</p>
+        <p class="ia"><strong>Durée:</strong>Pour ceux qui sont membre de la communauté, la durée de la formation est illimité. Pour une personne venant de l'extérieure, c'est selon le contrat.</p>
+        <p class="ia"><strong>Diplomes:</strong>Ils sont obtenus selon le niveau des catégories suivantes:<br><em>Louveteau;</em><br><em>Eclaireur;</em><br><em>Routier.</em></p>
+        <p class="ia"><strong>Contrat:</strong>Si c'est pour votre première fois que vous visitez ce site, télécharger le contrat suivant ce lien,<a href="" download="">Contrat</a>.</p>
+    </div>
     </div>
     <div class="footer">
         <div class="foot">
@@ -132,6 +150,32 @@
 </html>
 
 <style>
+    #ia{
+        font-size: 17px;
+        color: rgb(43,43,43);
+        cursor: pointer;
+    }
+    #is{
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(43,43,43);
+    }
+    #is:hover{
+        text-decoration: underline;
+        color: rgb(212, 31, 167);
+    }
+    p{
+        padding: 8px 0;
+    }
+    .Re .a{
+        cursor: pointer;
+    }
+    strong{
+        cursor: pointer;
+    }
+    .Re2 p{
+        text-align: justify;
+    }
     .Da{
         display: flex;
         align-items: center;
@@ -313,13 +357,26 @@
     width: 100%;
     height: 70vh;
     margin: 10px auto;
-    padding: 15px;
     position: static;
+    display: flex;
+}
+
+.Re{
+    width: 40%;
     display: block;
+    height: auto;
+    padding: 10px;
+    border-right: 2px solid rgb(209,209,209);
 }
-.selct p{
-    text-align: justify;
+.Re2{
+    width: 60%;
+    display: block;
+    height: auto;
+    padding: 10px;
 }
+
+
+
     .fe #i4,#i5{
         display: block;
         font-size: 16px;

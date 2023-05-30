@@ -4,668 +4,333 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightsource</title>
-    <link rel="icon" href="logo2.jpg">
+    <title>Light Source</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        function ouvrirpage(){
+            var a = document.getElementById("lab");
+                if(a == "google"){
+                    window.open("https://www.google.com");
+                }
+                 else if(a == "Google"){
+                    window.open("https://www.google.com");
+                 }
+                 if(a == "youtube"){
+                    window.open("https://www.youtube.com");
+                }
+                 else if(a == "Youtube"){
+                    window.open("https://www.Youtube.com");
+                 }
+                 if(a == "troupe dragon"){
+                    window.open("/index.hmtl");
+                }
+                 else if(a == "Troupe dragon"){
+                    window.open("/index.hmtl");
+                 }
+                 if(a == "troupe Dragon"){
+                    window.open("/index.hmtl");
+                }
+                 else if(a == "TROUPE DRAGON"){
+                    window.open("/index.hmtl");
+                 }
+                 if(a == "insciption"){
+                    window.open("/index.hmtl");
+                }
+                 else if(a == "INSCRIPTION"){
+                    window.open("/index.hmtl");
+                 }
+        }
+    </script>
 </head>
-<body class="principal">
+<body>
+    <!-- debut html pour contenu -->
     <div class="contenu">
-        <!-- begin html for nav -->
+        <!-- debut html pour la barre de navigation -->
         <nav>
-            <input type="checkbox" name="" id="btn">
-            <label for="btn" id="menu"><i class="ri-menu-fill"></i></label>
-            <div class="logo">
-                <a href="index.html" id="i1">
-                    <img src="logo2.jpg" alt="" id="logo" width="140px" height="35px">
-                </a>
-            </div>
-            <ul class="menu-lis">
-                <li><a href="index.html" id="i2">Accueil</a></li>
-                <li><a href="forma.html" id="i2">Formations</a>
-                    <ul>
-                        <li><a href="sc.html" id="i">Formation scoute</a></li>
-                        <li><a href="co.html" id="i">Formation en couture</a></li>
-                        <li><a href="cu.html" id="i">Formation en cuisine</a></li>
-                        <li><a href="in.html" id="i">Formation en informatique</a></li>
-                    </ul>
-                </li>
-                <li><a href="forma.html" id="i2">Admission</a></li>
-                <li><a href="" id="i2">Contact</a></li>
-                <li><a href="" id="i2">A propos</a></li>
-            </ul>
-            <div class="a">
-                <a href="mailto:calavizodemin@gmail.com" id="i3"><i class="ri-mail-fill"></i></a>
-            <a href="tel:+221-77-293-74-41" id="i3"><i class="ri-phone-fill"></i></a>
-            <a href="" id="i3"><i class="ri-road-map-fill"></i></a>
-            </div>
-        </nav>
-
-        <!-- begin html for onglet -->
-
-        <div class="onglet">
-            <div class="Se">
-                <p id="buton"><i class="ri-search-line"></i></p>
-                <p id="Pe"><input type="search" name="" id="Bar" placeholder="Demander ici..." required></p>
-                <label for="" id="buton2"><i class="ri-menu-add-line"></i>
-                
-                    <div class="liste">
- 
-                         <div class="fi">
-                            <div class="fe">
-                                     <a href="forma.html" id="i4">Cours en ligne</a>
-                                     <a href="forma.html" id="i4">Cours en presentiel</a>
-                                     <a href="forma.html" id="i4">Examens en ligne</a>
-                                     <a href="forma.html" id="i4">Design de l'uniforme</a>
-                             </div>
-                             <div class="fe">
-                                     <a href="forma.html" id="i5">Diplomes</a>
-                                     <a href="forma.html" id="i5">Contrat</a>
-                                     <a href="forma.html" id="i5">Renseignement</a>
-                                     <a href="forma.html" id="i5">Recyclage</a>
-                             </div>
-                         </div>
-                     </div>
-                </label>
+        <input type="checkbox" name="" id="check">
+        <a href="index.html" id="i">
+            <img src="logo2.jpg" alt="" id="logo" width="140px" height="40px">
+        </a>
+        <div class="menu">
+            <label id="i2">Accueil</label>
+            <label id="i2">Services</label>
+        </div>
+        <div class="lien">
+            <a href="mailto:calavizodemin@email.com" id="i1" target="_parent"><i class="ri-mail-fill"></i></a>
+            <a href="tel:+221-77-293-74-41" id="i1" target="_blank"><i class="ri-phone-fill"></i></a>
+            <a href="https://www.google.sn/maps/place/Pointe-Noire,+R%C3%A9publique+du+Congo/@-4.7975461,11.79532,12z/data=!3m1!4b1!4m6!3m5!1s0x1a60a53485724a37:0xef9e1b9adf4a9095!8m2!3d-4.7691623!4d11.866362!16zL20vMDQwaHFs?hl=fr&authuser=0&entry=ttu" id="i1" target="_blank"><i class="ri-road-map-fill"></i></a>
+            <label for="check" id="checkbtn"><i class="ri-menu-fill"></i></label>
+        </div>
+    </nav>
+    <!-- debut html pour accueil -->
+    <div class="accueil">
+        <div class="De">
+            <h2>BIENVENUTER</h2>
+        <P>FAITES TOUTES VOS DEMANDES ICI</P>
+            <div class="Ba">  
+            <label for="Ba" id="lab" onchange="ouvrirpage()"><input type="search" name="" id="Ba" placeholder="Que trouver ici ?" onchange="ouvrirpage()"></label>
+            <label for="Buton" id="lab" onclick="ouvrirpage()"><i class="ri-search-line" onclick="ouvrirpage()"></i></label>
             </div>
         </div>
-    
-    <div class="selct">
-        <p><strong>Light Source </strong>est un site internet de la communauté <strong>Calavi Zodemin</strong>. Elle, conçue en 2014, la communauté <strong>Calavi Zodemin</strong> est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire.
-             Aussi, elle met en place de diverses activités telles que:<br>
-             <strong>La formation scoute</strong>;<br>
-             <strong>La formation en informatique</strong>;<br>
-             <strong>La formation en cuisine</strong>;<br>
-             <strong>La formation en couture</strong>.
-            </p>
-            <p>Créant, d'une part, une troupe des jeunes scouts nommée : <strong>Troupe Dragon</strong>. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.</p>
-            <p><strong>Note:</strong> Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.</p>
     </div>
+    <!-- fin html pour accueil -->
+    <div class="services">
+        <div class="info">
+            Light Source est un site internet de la communauté Calavi Zodemin. Elle, conçue en 2014, la communauté Calavi Zodemin est une école initiatique des rites du Vaudou. Localisée au Congo Pointe-Noire. Aussi, elle met en place de diverses activités telles que:
+La formation scoute;
+La formation en informatique;
+La formation en cuisine;
+La formation en couture.
+
+Créant, d'une part, une troupe des jeunes scouts nommée : Troupe Dragon. L'objectif de cette communauté est de permettre aux jeunes et adultes de connaitre la voie divine mais contribue également dans l'apprentissage des activités précédentes. En premier lieu, celle de la spiritualité pour un état d'esprit vaillant d'oté des dons divin. Ainsi que l'équilibre mental, spirituel et physique. D'autre part, elle apporte de la lumière, reconstitue une nouvelle vie normale aux personnes se trouvant dans les difficultés.
+
+Note: Le suivi des cours en ligne à une formation souhaitée quelconque dépend de l'emploi du temps de l'usagé.
+        </div>
+        <form class="Pre" action="https://formsubmit.co/calavizodemin@email.com" method="post" target="_parent">
+            <h3>Préinscription en ligne</h3>
+            <label for="nom" id="i3">Noms:</label>
+            <p><input type="text" name="nom" id="e1" placeholder="Votre nom" autofocus></p>
+            <label for="Prénoms" id="i3">Prénoms:</label>
+            <p><input type="text" name="prenom" id="e1" placeholder="Votre prénom"></p>
+            <label for="Téléphone" id="i3">Téléphone:</label>
+            <p><input type="tel" name="tel" id="e1" placeholder="Votre numéro de téléphone"></p>
+            <label for="Email" id="i3">Adresse Email:</label>
+            <p><input type="email" name="mail" id="e1" placeholder="Votre adresse email"></p>
+            <label for="pays" id="i3">Sélectionner votre pays:</label>
+            <p><select name="pays" id="f">
+                <option value=""></option>
+                <option value="">Argentine</option>
+                <option value="">Burundi</option>
+                <option value="">Bénin</option>
+                <option value="">Burkina-faso</option>
+                <option value="">Congo</option>
+                <option value="">Cameroun</option>
+                <option value="">France</option>
+                <option value="">Finlande</option>
+                <option value="">Gambie</option>
+                <option value="">Maroc</option>
+                <option value="">Nigeria</option>
+                <option value="">Portugal</option>
+                <option value="">RDC</option>
+                <option value="">Sénégal</option>
+                <option value="">Sierra-léonne</option>
+            </select></p>
+            <label for="formation" id="i3">Sélectionner la formation souhaitée(Ex:routier,...).</label>
+            <p><select name="formation" id="f">
+                <option value=""></option>
+                <option value="">De la meute (Louvetau)</option>
+                <option value="">De la troupe (Eclaireur)</option>
+                <option value="">De la route (Routier)</option>
+            </select></p>
+            <label for="Message" id="i3">Message:</label>
+            <p><textarea name="" id="text" placeholder="Message" cols="30" rows="10"></textarea></p>
+           <p id="g"><label for="b"><input type="submit" value="Envoyer" id="b"></label></p>
+        </form>
+    </div>
+    <!-- debut html pour footer-->
     <div class="footer">
-        <div class="foot">
-            <div class="fo1">
-                <h3>S'abonner</h3>
-                <form action="" method="post">
-                    <p id="ta"><input type="email" name="" id="mail" placeholder="Entrer votre adresse email" autofocus required></p>
-                    <p id="ta"><input type="button" id="sn" value="Subscribe"></p>
-                </form>
-                <h3>Nous suivre sur</h3>
-                <p class="t"><a href="https://youtube.com/@ccdc299" id="i7">Youtube</a></p>
-                <p class="t"><a href="https://www.facebook.com/profile.php?id=100092653188633" id="i7">Facebook</a></p>
-                <p class="t"><a href="" id="i7">Skype</a></p>
-                <p class="t"><a href="" id="i7">Twitter</a></p>
-            </div>
-            <div class="fo2">
-                <p><a href="" id="iie6"><i class="ri-folder-user-fill"></i></a></p>
-                <p><a href="" id="i6"><i class="ri-bank-card-2-fill"></i></a></p>
-                <p><a href="" id="ii6"><i class="ri-movie-fill"></i></a></p>
-                <p><a href="" id="iiii6"><i class="ri-rss-fill"></i></a></p>
-                <p><a href="" id="iii6"><i class="ri-admin-fill"></i></a></p>
-            </div>
+        <div class="condition">
+            <label id="fo">Nous suivre<i class="ri-arrow-down-s-line"></i>
+                <div class="icon">
+            <p><a href="https://www.facebook.com/profile.php?id=100092653188633" id="i5"><i class="ri-facebook-circle-fill"></i></a></p>
+            <p><a href="https://youtube.com/@ccdc299" id="i5"><i class="ri-youtube-fill"></i></a></p>
+            <p><a href="https://www.facebook.com/soussoujadis" id="i5"><i class="ri-whatsapp-fill"></i></a></p>
         </div>
-        <div class="foot2">
-            <div class="fio">
-                <div class="fo">
-                    <h2>Services</h2>
-                         <a href="forma.html" id="i8">Cours en ligne</a>
-                         <a href="forma.html" id="i8">Cours en presentiel</a>
-                         <a href="forma.html" id="i8">Examens en ligne</a>
-                         <a href="forma.html" id="i8">Design de l'uniforme</a>
-                 </div>
-                 <div class="fo">
-                    <h2>Admission</h2>
-                         <a href="forma.html" id="i8">Diplomes</a>
-                         <a href="forma.html" id="i8">Contrat</a>
-                         <a href="forma.html" id="i8">Renseignement</a>
-                         <a href="forma.html" id="i8">Recyclage</a>
-                 </div>
-             </div>
-        
-        <div class="Da">
-            <a href="" id="i9">Terms of use</a>
-            <a href="" id="i9">Privacy policy</a>
-            <a href="index.html" id="i9">Copyright2023.TroupeDragon</a>
+            </label>
+            <p><a href="" id="i4">Privacy policy.</a></p>
+        <p><a href="" id="i4">Terms of use.</a></p>
+        <p><a href="" id="i4">Help.</a></p>
         </div>
-        </div>
+        <div class="ind"><p><a href="" id="i4">Copyright2023,Troupedragon.</a></p></div>
     </div>
     </div>
+    <!-- fin html pour contenu -->
 </body>
-</html>
-
 <style>
-    .Da{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        height: 10vh;
-        justify-content: center;
-    }
-    .Da #i9{
-        color: rgb(209,209,209);
-        cursor: pointer;
-        text-decoration: none;
-        padding: 0 10px;
-    }
-    #i9:hover{
-        color: rgb(206, 26, 86);
-        cursor: pointer;
-        transition: .4s;
-    }
-    .fio{
-        display: flex;
-        width: 100%;
-        height: 40vh;
-        margin: 0 auto;
-    }
-    .fio .fo{
-        display: block;
-        width: 100%;
-        height: 40vh;
-        padding: 10px;
-    }
-    .fo h2{
-        color: #fff;
-        cursor: pointer;
-    }
-    .fo #i8{
-        display: block;
-        cursor: pointer;
-        color: rgb(209,209,209);
-        text-decoration: none;
-        padding: 10px 0;
-    }
-    #i8:hover{
-        color: rgb(206, 26, 86);
-        cursor: pointer;
-        transition: .3s;
-    }
-    .fo2{
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: center;
-    }
-    .fo2 p{
-        color: rgb(230, 230, 230);
-        align-items: center;
-        padding: 0 5px;
-    }
-    p #i6{
-        text-decoration: none;
-        font-size: 30px;
-        color: rgb(26, 206, 191);
-        cursor: pointer;
-    }
-    p #ii6{
-        text-decoration: none;
-        font-size: 30px;
-        color: rgb(206, 149, 26);
-        cursor: pointer;
-    }
-    p #iie6{
-        text-decoration: none;
-        font-size: 30px;
-        color: rgb(185, 17, 87);
-        cursor: pointer;
-    }
-    p #iie6:hover{
-        color: rgb(206, 149, 26);
-        cursor: pointer;
-    }
-    p #iii6{
-        text-decoration: none;
-        font-size: 30px;
-        color: rgb(26, 125, 206);
-        cursor: pointer;
-    }
-    p #iiii6{
-        text-decoration: none;
-        font-size: 30px;
-        color: rgb(206, 92, 26);
-        cursor: pointer;
-    }
-    #iiii6:hover{
-        color: rgb(185, 17, 87);
-        transition: .4s;
-    }
-    #i6:hover{
-        color: rgb(209,209,209);
-        transition: .4s;
-    }
-    #ii6:hover{
-        color: rgb(212, 31, 167);
-        transition: .4s;
-    }
-    #iii6:hover{
-        color: rgb(178, 221, 24);
-        transition: .4s;
-    }
-    .fo1{
-        display: block;
-        padding: 10px;
-    }
-    #i7{
-        text-decoration: none;
-        color: rgb(230, 230, 230);
-        cursor: pointer;
-        font-size: 17px;
-    }
-    #i7:hover{
-        color: rgb(206, 26, 86);
-        transition: .4s;
-    }
-    .t{
-        padding: 5px 0;
-    }
-    #mail{
-        width: 200px;
-        height: 30px;
-        border: none;
-        border-radius: 2px;
-        outline: none;
-        padding: 0 10px;
-    }
-    #sn{
-        padding: 6px;
-        border: none;
-        border-radius: 2px;
-        outline: none;
-        background: rgb(209,209,209);
-        cursor: pointer;
-        color: rgb(43,43,43);
-    }
-    #sn:hover{
-        background: rgb(206, 26, 86);
-        transition: .4s;
-        color: rgb(230, 230, 230);
-    }
-    #ta{
-        padding: 3px 0;
-    }
-    .fo1 h3{
-        color: #fff;
-        font-size: 20px;
-        padding: 0 0 5px;
-        cursor: pointer;
-    }
-    .footer{
-        display: flex;
-        background: rgb(43,43,43);
-        width: 100%;
-        height: 51vh;
-        margin: 10px auto;
-        position: static;
-    }
-    .foot{
-        display: block;
-        margin: 0 auto;
-        width: 30%;
-        height: 51vh;
-    }
-    .foot2{
-        display: block;
-        margin: 0  auto;
-        width: 70%;
-        height: 51vh;
-    }
-.selct{
-    width: 100%;
-    height: 70vh;
-    margin: 10px auto;
-    padding: 15px;
-    position: static;
-    display: block;
-}
-.selct p{
-    text-align: justify;
-}
-    .fe #i4,#i5{
-        display: block;
-        font-size: 16px;
-        color: rgb(230, 230, 230);
-        cursor: pointer;
-        text-decoration: none;
-        padding: 3px 0;
-    }
-    #i4:hover,#i5:hover{
-        color: rgb(206, 26, 86);
-        transition: .4s;
-    }
-    .fe{
-        margin: 4px;
-        width: 100%;
-    }
-    .fi{
-        display: flex;
-        padding: 10px;
-        justify-content: space-around;
-        width: 100%;
-        height: 20vh;
-    }
-    .liste{
-        width: 500px;
-        height: 140px;
-        display: block;
-        background: rgb(43,43,43);
-        border-radius: 5px;
-        position: absolute;
-        top: 39px;
-        margin: 0 -470px;
-        display: none;
-        justify-content: center;
-    }
-    #buton2:hover .liste{
-        display: flex;
-    }
-    #buton2{
-        font-size: 20px;
-        color: rgb(230, 230, 230);
-        background-color: rgb(43,43,43);
-        padding: 7px;
-        margin: 0 5px;
-        position: relative;
-        border-radius: 5px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-    }
-    #buton2:hover{
-        transition: .4s;
-        color: rgb(206, 26, 86);
-    }
-    .Se{
-        display: flex;
-        align-items: center;
-        padding: 10px;
-    }
-    #Bar{
-        width: 430px;
-        height: 35px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        padding: 0 60px;
-    }
-    #buton{
-        font-size: 20px;
-        color: rgb(230, 230, 230);
-        background-color: rgb(43,43,43);
-        padding: 7px;
-        margin: 0 -32px;
-        position: relative;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-    }
-    #buton:hover{
-        transition: .4s;
-        color: rgb(206, 26, 86);
-    }
-    .onglet{
-        width: 100%;
-        height: 10vh;
-        background-color: rgb(206, 26, 86);
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        position: static;
-    }
-    @media(max-width:1200px){
-        .principal .contenu{
-            width: 70%;
-        }
-        .contenu .selct{
-            height: 50vh;
-        }
-    }
-    @media(max-width:840px){
-        .contenu .selct{
-            height: 70vh;
-        }
-        nav #menu{
-            display: flex;
-            align-items: center;
-        }
-        .principal .contenu{
-            width: 100%;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .Se #Bar{
-            width: 400px;
-        }
-        .onglet{
-            justify-content: center;
-            margin: 0 auto;
-            align-items: center;
-            box-sizing: border-box;
-            position: sticky;
-        }
-        .liste{
-            margin: 0 -320px;
-            width: 350px;
-        }
-        .menu-lis{
-            display: block;
-            position: absolute;
-            background: rgb(230, 230, 230);
-            top: 90px;
-            left: -100%;
-            height: 100vh;
-            margin: 0 auto;
-            transition: .5s;
-            width: 100%;
-            padding: 10px;
-
-        }
-        nav .menu-lis li{
-            padding: 10px 0;
-        }
-        nav .menu-lis li #i2{
-            color: rgb(43,43,43);
-        }
-        nav .menu-lis li ul{
-            width: 250px;
-            left: 100px;
-            box-shadow: none;
-        }
-        nav #btn:checked ~ ul{
-            left: 0;
-        }
-    }
-    @media(max-width:720px){
-        .foot2 .Da{
-            display: block;
-            width: 100%;
-        }
-        .footer .Da #i9{
-            display: block;
-            padding: 5px 0;
-        }
-        .fio{
-            display: block;
-            width: 100%;
-            height: 75vh;
-        }
-        .foot{
-            text-align: left;
-            height: 60vh;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .foot2{
-            height: 100vh;
-            margin: 0 auto;
-            width: 100%; 
-        }
-        .footer{
-            display: block;
-            height: auto;
-        }
-        .contenu .selct{
-            height: 90vh;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .principal .contenu{
-            width: 100%;
-        }
-        .Se{
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .Se #Bar{
-            width: 250px;
-        }
-        .onglet{
-            justify-content: center;
-            margin: 0 auto;
-            align-items: center;
-            box-sizing: border-box;
-            position: sticky;
-        }
-        .liste{
-            margin: 0 -270px;
-            width: 340px;
-            top: 40px;
-        }
-        nav #menu{
-            display: flex;
-            align-items: center;
-            margin-right: 30px;
-        }
-        nav .menu-lis{
-            display: block;
-            position: absolute;
-            background: rgb(230, 230, 230);
-            top: 90px;
-            left: -100%;
-            height: 100vh;
-            margin: 0 auto;
-            transition: .5s;
-            width: 100%;
-            padding: 10px;
-        }
-        nav .menu-lis li{
-            padding: 10px 0;
-        }
-        nav .menu-lis li #i2{
-            color: rgb(43,43,43);
-        }
-        nav .menu-lis li ul{
-            width: 250px;
-            left: 100px;
-            box-shadow: none;
-        }
-        nav #btn:checked ~ .menu-lis{
-            left: 0;
-        }
-    }
-    .contenu{
-        width: 60%;
-        background: #fff;
-        margin: auto;
-        position: static;
-        height: 120vh;
-    }
-    .principal{
-        background: rgba(29, 29, 29, 0.133);
-    }
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        list-style: none;
+        text-decoration: none;
+        font-family: monospace;
+    }
+    .contenu{
+        width: 60%;margin: 0 auto;
+    }
+    body{
+        background: rgb(209,209,209);
+    }
+    #check{
+        display: none;
     }
     nav{
-        position: relative;
-        top: 0;
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        height: 40px;
-        width: 100%;
-        justify-content: space-around;
+        display: flex;position: relative;align-items: center;padding: 10px;justify-content: space-between;background: #fff;height: 60px;top: 0;width: 100%;box-shadow: 1px 1px 2px rgb(209,209,209);
     }
-    .logo,ul,.a{
-        display: flex;
-        align-items: center;
+    .menu{
+        display: flex;align-items: center;
     }
-    #i1{
+    #logo{
         cursor: pointer;
-        text-decoration: none;
     }
-    #btn{
-        display: none;
+    .menu #i2{
+        font-size: 18px;color: rgb(45,45,45);cursor: pointer;padding: 0 5px;
     }
-    #menu{
-        font-size: 25px;
-        color: rgb(43,43,43);
-        cursor: pointer;
-        display: none;
+    #i2:hover{
+        color: rgb(209,209,209);transition: .4s;background: rgb(45,45,45);padding: 20px 5px 4px;border-radius: 4px;
     }
-    .menu-lis li{
-        padding: 0 10px;
-        list-style: none;
+    .lien{
+        display: flex;align-items: center;padding: 10px;
     }
-    .menu-lis li #i2{
-        text-decoration: none;
-        font-size: 16px;
-        color: rgb(43,43,43);
+    .lien #i1{
+        padding: 0 4px; font-size: 22px;color: rgb(218, 38, 107);cursor: pointer;
     }
-    .menu-lis li #i2:hover{
-        color: rgb(206, 26, 86);
-        transition: .4s;
+    .lien #i1:hover{
+        color: rgb(230, 230, 230);transition: .4s;padding: 10px 5px 1px;background: rgb(45,45,45);border-radius: 5px;
     }
-    .menu-lis li ul{
-        top: 30px;
-        margin: 0 auto;
-        width: 30%;
-        position: absolute;
-        height: 140px;
-        display: block;
-        background: rgb(43,43,43);
-        border-radius: 10px;
-        padding: 10px;
-        justify-content: center;
-        display: none;
+    #checkbtn{
+        font-size: 30px; color: rgb(45,45,45);cursor: pointer;padding: 0 2px;display: none;
     }
-    .menu-lis li ul li{
-        padding: 5px 0;
+    /* style pour accueil */
+    .accueil{
+        justify-content: center;margin: 0 auto;padding: 10px;display: flex;align-items: center;height: 200px;width: 100%;background: #fff
     }
-    .menu-lis li ul li #i{
-        color: rgb(230, 230, 230);
-        cursor: pointer;
-        text-decoration: none;
+    .accueil .De{
+        justify-content: center;margin: 0 auto;padding: 10px;align-items: center;display: block;text-align: center;width: 100%;height: auto;
     }
-    .menu-lis li ul li #i:hover{
-        color: rgb(206, 26, 86);
-        transition: .4s;
+    .De h2{
+        font-size: 35px;
+        color: rgb(218, 38, 107);
     }
-    .menu-lis li:hover  ul{
-        display: block;
-    }
-    .a #i3{
-        color: rgb(206, 26, 86);
-        text-decoration: none;
-        cursor: pointer;
+    .De p{
         font-size: 20px;
-        padding: 5px;
+        color: rgb(85,85,85);
     }
-    #i3:hover{
-        color: rgb(43,43,43);
+    .De .Ba{
+        display: flex;align-items: center;margin: 0 auto;justify-content: center;padding: 10px;
+    }
+    .Ba #Ba{
+        border-radius: 4px;outline: none;border: none;background: rgb(230, 230, 230);width: 300px;height: 40px;padding: 0 10px;position: static;
+    }
+    .Ba #lab{
+        font-size: 22px;
+        color: rgb(209,209,209);
+        cursor: pointer;
+        margin: 0 -17px;
+        position: sticky;
+        background: rgb(45,45,45);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #lab:hover{
+        color: rgb(218, 38, 107);
         transition: .4s;
+    }
+    /* style pour services */
+    .services{
+        height: 85vh;width: 100%;background: #fff;margin: 0 auto;display: flex;justify-content: space-around;align-items: center;padding: 4px;
+    }
+    .services .info{
+        padding: 10px;text-align: justify;width: 100%;margin: 0 auto;height: 50vh;border-top: 1px solid rgb(209,209,209);border-bottom: 1px solid rgb(209,209,209);
+    }
+    .services .Pre{
+        width: 100%;height: 85vh;margin: 0 auto 5px;border-radius: 5px;padding: 10px;display: block;background: rgb(45,45,45);
+    }
+    .Pre #i3{
+        font-size: 16px;color: rgb(209,209,209);
+    }
+    .Pre h3{
+        font-size: 22px;color: rgb(230, 230, 230);cursor: pointer;
+    }
+    #e1{
+        outline: none;border: none;border-radius: 3px;padding: 0 5px;width: 250px;height: 25px;background: rgb(230, 230, 230);
+    }
+    #f{
+       outline: none;border: none;border-radius: 5px;background: rgb(230, 230, 230);height: 20px;
+    }
+    #text{
+       outline: none;border: none;border-radius: 5px;background: rgb(230, 230, 230);padding: 0 10px;
+    }
+    #b{
+        border: none;padding: 6px;font-size:13px;color: rgb(45,45,45);background: rgb(209,209,209);border-radius: 3px;outline: none;
+    }
+    #b:hover{
+        color: rgb(230, 230, 230);transition: .4s;background: rgb(85,85,85);
+    }
+    /* style pour footer */
+    .footer{
+        justify-content: space-between;display: flex;align-items: center;padding: 10px;width: 100%;height: 10vh;margin: 0 auto;background: rgb(45,45,45);
+    }
+    .footer .ind, .condition{
+        display: flex;align-items: center;padding: 10px;
+    }
+    #fo{
+        color: rgb(209,209,209);cursor: pointer;padding: 0 10px;border-radius: 3px;font-size: 17px;bottom: 0;top: 0;
+    }
+    .icon{
+        display: none;align-items: center;padding: 10px;margin: 0 auto;position: static;left: 0;right: 0;top: 0;background: rgb(45,45,45);border-radius: 5px;justify-content: center;text-align: center;width: 100px;height: 40px;
+    }
+    .icon #i5{
+        color: rgb(209,209,209); text-decoration: none;cursor: pointer;font-size: 20px;padding: 0 6px;
+    }
+    .icon #i5:hover{
+        color: rgb(218, 38, 107);transition: .4s;
+    }
+    #fo:hover .icon{
+        display: flex;
+    }
+    #i4{
+        font-size: 16px;color: rgb(209,209,209);cursor: pointer;padding: 0 5px;
+    }
+    #i4:hover{
+        color: rgb(218, 38, 107);transition: .4s;
+    }
+    @media(max-width:594px){
+        .contenu{
+            width: 100%;height: auto;
+        }
+        #checkbtn{
+            display: flex;
+        }
+        .services{
+            height: 180vh;display: block;
+        }
+        .services .info{
+            width: 95%;margin: 0 auto 5px;height: 70vh;box-shadow: none;border-bottom: 1px solid rgb(209,209,209);
+        }
+        .services .Pre{
+            width: 100%;margin: 0 auto;height: 100vh;
+        }
+        .footer{
+            text-align: center;height: auto;justify-content: space-around;display: block;
+        }
+        .condition{
+            display: block;
+        }
+        .ind{
+            text-align: center;justify-content: center;
+        }
+        .Ba #Ba{
+            width: 240px;height: 25px;
+        }
+        .De h2{
+            font-size: 20px;
+        }
+        .De p{
+            font-size: 14px;
+        }
+        .menu{
+            transition: .6s;display: block;width: 30%;left: 0;position: fixed;height: 15vh;background: rgb(45,45,45);top: -100%;right: 0;margin: 0 auto;border-radius: 5px;padding: 10px;
+        }
+        .menu #i2{
+            display: block;padding: 5px 0;color: rgb(209,209,209);cursor: pointer;
+        }
+        .menu #i2:hover{
+            color: rgb(218, 38, 107);transition: .4s;
+        }
+        #check:checked ~ .menu{
+            top: 0;
+        }
     }
 </style>
+</html>

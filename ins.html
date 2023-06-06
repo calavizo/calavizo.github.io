@@ -24,7 +24,22 @@
     </div>
 
     <!-- info debut html -->
-    <div class=""></div>
+    <div class="Formulaire">
+        <form id="inscript" action="" method="post">
+            <p><input type="text" name="" id="text" placeholder="Votre prénom" required></p>
+            <p><input type="text" name="" id="text" placeholder="Votre nom" required></p>
+            <p><input type="email" name="" id="email" placeholder="Votre adresse email" required></p>
+            <p><select name="" id="opt">
+                <option value=""></option>
+                <option value="1">Formation scoute</option>
+                <option value="2">Formation en informatique</option>
+                <option value="3">Formation en cuisine</option>
+                <option value="4">Formation en couture</option>
+            </select></p>
+            <p><textarea name="" id="me" cols="30" rows="10" placeholder="Message"></textarea></p>
+            <p><input type="submit" id="val" value="Envoyer"></p>
+        </form>
+    </div>
 
 
     <div class="footer">
@@ -189,5 +204,147 @@
     #e3:hover{
         color: rgb(54, 179, 168);
         transition: .4s;
+    }
+    .li{
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+        height: 30px;
+    }
+    .li #li{
+        color: rgb(95, 95, 95);
+        cursor: pointer;
+        padding: 0 5px;
+    }
+    #li:hover{
+        color: rgb(219, 38, 98);
+        transition: .4s;
+    }
+    .Formulaire{
+        width: 25%;
+        height: 450px;
+        margin: 20px auto 10px;
+        border-radius: 10px;
+    }
+    .Formulaire #inscript{
+        width: 100%;
+        height: 450px;
+        background: rgb(219, 38, 98);
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .Formulaire #inscript #text, #email, #opt{
+        border: none;
+        outline: none;
+        width: 300px;
+        height: 30px;
+        padding: 0 10px;
+        margin: 10px;
+        border-radius: 2px;
+    }
+    .Formulaire #inscript #me{
+        border-radius: 2px;
+        outline: none;
+        border: 1px solid rgb(209,209,209);
+        width: 300px;
+        padding: 0 10px;
+    }
+    #val{
+        outline: none;
+        border: none;
+        background: rgb(45,45,45);
+        color: rgb(250,250,250);
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 100px;
+    }
+    #val:hover{
+        color: rgb(209,209,209);
+        transition: .4s;
+        background: rgb(28, 170, 28);
+    }
+
+    @media(max-width:720px){
+        .Formulaire{
+            width: 70%;
+        }
+        .navigation #menu{
+            display: block;
+            cursor: pointer;
+        }
+        .menu{
+            display: flex;
+            position: fixed;
+            background: rgb(250,250,250);
+            top: -100%;
+            margin: 50px auto;
+            padding: 10px;
+            left: 0;
+            height: 10vh;
+            transition: .5s;
+            width: 95%;
+            right: 0;
+            border-radius: 5px;
+            border: 1px solid rgb(230,230,230);
+            align-items: center;
+        }
+        .navigation #btn:checked ~ .menu{
+            top: 0;
+        }
+        .icon{
+            margin: 0 10px;
+            display: flex;
+        }
+        .icon #butonappel{
+            margin: 0 2px;
+        }
+        .logo #logo{
+            width: 120px;
+            height: 50px;
+        }
+        .back-img{
+            width: 95%;
+            height: 250px;
+        }
+        .back-img img{
+            height: 250px;
+        }
+        .info{
+            margin: 5px auto 40px;
+            width: 80%;
+            height: auto;
+        }
+        .footer{
+            display: block;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+        .footer h4{
+            text-align: center;
+        }
+        .footer .Micon{
+            justify-content: center;
+            text-align: center;
+        }
+        .lien .box #ie{
+            display: block;
+            text-align: center;
+        }
+        .lien .box a{
+            text-align: center;
+            display: block;
+            padding: 2px 0;
+        }
+        .li #li{
+            text-align: center;
+            display: block;
+            padding: 2px;
+        }
     }
 </style>

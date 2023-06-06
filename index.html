@@ -62,9 +62,9 @@
     </ul>
     <br>Nous vous rappelrons ici que notre activité principale est le scoutisme.</p>
     <br><h2>Contact</h2>
-    <p id="info">Téléphone 1: <a href="tel:+242-04-406-25-24" id="ie">Lancer l'appel.</a></p>
-    <p id="info">Téléphone 2: <a href="tel:+221-77-293-74-41" id="ie">Lancer l'appel.</a></p>
-    <p id="info">Pour vous guider: <a href="mailto:soussoujadis35@gmail.com" id="ie">Envoyer un mail.</a></p>
+    <p id="info">Téléphone 1: <a href="tel:+242-04-406-25-24" id="iu">Lancer l'appel.</a></p>
+    <p id="info">Téléphone 2: <a href="tel:+221-77-293-74-41" id="iu">Lancer l'appel.</a></p>
+    <p id="info">Pour vous guider: <a href="mailto:soussoujadis35@gmail.com" id="iu">Envoyer un mail.</a></p>
 
 
 </div>
@@ -181,6 +181,10 @@
     }
     .box{
         padding: 5px;
+    }
+    #iu{
+        color: rgb(38, 131, 219);
+        cursor: pointer;
     }
     .box #mail{
         outline: none;
@@ -313,8 +317,15 @@
             border: 1px solid rgb(230,230,230);
             align-items: center;
         }
-        .navigation #btn:checked ~ .menu, .icon{
+        .navigation #btn:checked ~ .menu{
             top: 0;
+        }
+        .icon{
+            margin: 0 30px;
+        }
+        .logo #logo{
+            width: 100px;
+            height: 40px;
         }
         .back-img{
             width: 95%;

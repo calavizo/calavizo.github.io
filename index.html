@@ -1,0 +1,542 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="icon" href="logo.jpg">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+        <title>communauté calavizo demin</title>
+        <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 80px;
+            background-color: #FFFFFF;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        img{
+            float: left;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .mon_titre{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #3c21d8;
+            margin: 0 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .tv{
+            margin: 0 5px;
+            font-size: 1rem;
+            color: #FF0000;
+            text-transform: none;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 0 50px;
+            list-style: none;
+        }
+        ul li{
+            padding: 20px;
+        }
+        ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #707770;
+            position: relative;
+        }
+        ul li a::before{
+            content: '';
+            background: #3c21d8;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transition: all .5s ease-in-out;
+            transform-origin: left;
+            bottom: -7px;
+            position: absolute;
+        }
+        ul li a:hover::before{
+            transform-origin: right;
+            transform: scaleX(1);
+        }
+        ul li a:hover{
+            color: #3c21d8;
+        }
+        .lien{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .in{
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #3c21d8;
+            border-radius: 4px;
+            color: #FFFFFF;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .updates{
+            font-size: 20px;
+            color: #707770;
+            text-decoration: none;
+            border: 0.5px solid #3c21d8;
+            border-radius: 3px;
+            padding: 10px;
+        }
+        .updates:hover{
+            color: #3c21d8;
+        }
+        .up{
+            padding: 100px 200px;
+            width: 100%;
+            height: 85vh;
+            background-color: #def;
+        }
+        .titre{
+            text-transform: uppercase;
+            font-size: 5rem;
+            letter-spacing: 3px;
+            color: #3c21d8;
+        }
+        .sub-titre{
+            color: #707770;
+            font-size: 2.5rem;
+        }
+        .text{
+            font-size: 1.5rem;
+            color: #423434;
+        }
+        .i{
+            margin: 50px 0;
+            background-color: #3c21d8;
+            border-radius: 4px;
+            padding: 20px;
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 3px 4px #3c21d8a2;
+        }
+        .contact{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 22px;
+        }
+        .down{
+            display: flex;
+            width: 100%;
+            height: 85vh;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: space-around;
+            background-color: rgb(250,250,250);
+        }
+        .left{
+            width: 100%;
+            height: 70vh;
+            padding: 20px;
+            margin: 0 20px;
+            display: block;
+        }
+        .titre-down{
+            font-size: 2.3rem;
+            color: #3c21d8;
+        }
+        .text-down{
+            font-size: 1.5rem;
+            color: #707770;
+        }
+        .right{
+            display: block;
+            height: 70vh;
+            width: 100%;
+            justify-content: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .scene{
+            font-size: 1.7rem;
+            color: #3c21d8;
+            padding: 10px 5px;
+        }
+        .vidmate{
+            width: 500px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 2px;
+            background-color: rgb(245,245,245);
+            box-shadow: 3px 3px 5px rgb(230,230,230);
+        }
+        video{
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .r{
+            display: block;
+            width: 400px;
+            height: 200px;
+            margin: 70px 40px;
+            border: solid 1px #3c21d8;
+            border-radius: 3px;
+        }
+        .nom{
+            padding: 30px 20px 0;
+            color: #3c21d8;
+            font-size: 22px;
+        }
+        .tel, .mail{
+            padding: 10px 20px;
+            color: #707770;
+            font-size: 18px;
+        }
+        #slider{
+            overflow: hidden;
+            width: 100%;
+            align-items: center;
+            max-height: 100vh;
+            border: 20px solid #FFFFFF;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figure img{
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+        #checkbtn{
+            display: none;
+        }
+        .btn{
+                display: none;
+                align-items: center;
+                font-size: 30px;
+                color: #3c21d8;
+            }
+        footer{
+            width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+            background-color: #FF0000;
+            height: 120px;
+        }
+        @media(max-width: 1000px){
+            .up{
+                width: 100%;
+                padding: 40px;
+                height: 70vh;
+            }
+            .titre{
+                font-size: 4.5rem;
+            }
+            .sub-titre{
+                font-size: 1.6rem;
+            }
+            .down{
+                width: 100%;
+                display: block;
+                padding: 10px;
+                margin: 0 auto;
+                height: auto;
+            }
+        }
+        @media(max-width: 720px){
+            .btn{
+                display: flex;
+                padding: 10px;
+                align-items: center;
+            }
+            .up{
+                width: 100%;
+                padding: 40px;
+                height: 70vh;
+            }
+            .titre{
+                font-size: 4.5rem;
+            }
+            .sub-titre{
+                font-size: 1.6rem;
+            }
+            .left{
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                display: block;
+                padding: 10px;
+            }
+            .titre-down{
+                font-size: 1.7rem;
+            }
+            .text-down{
+                font-size: 1.2rem;
+            }
+            .r{
+                margin: 40px 6px;
+            }
+            .down{
+                width: 100%;
+                display: block;
+                justify-content: center;
+                margin: 0 auto;
+                height: auto;
+            }
+            .right{
+                display: block;
+                justify-content: center;
+            }
+            .scene{
+                font-size: 1.2rem;
+            }
+            .vidmate{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 300px;
+                justify-content: center;
+            }
+            .in, .updates{
+                padding: 5px;
+            }
+            .logo ul{
+                display: block;
+                width: 100%;
+                height: 100vh;
+                background-color: #FFFFFF;
+                position: fixed;
+                transition: .6s ease-in-out;
+                left: -100%;
+                margin: 0 auto;
+                top: 80px;
+            }
+            #checkbtn:checked ~ .logo ul{
+                left: 0;
+            }
+            .fw{
+                font-size: 30px;
+            }
+        }
+        .folow{
+            display: block;
+            justify-content: center;
+            margin: 30px 0;
+            width: 100%;
+            height: 50vh;
+            text-align: center;
+            padding: 30px;
+        }
+        .fw{
+            font-size: 2.5rem;
+            color: #3c21d8;
+            padding: 20px 10px;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: center;
+        }
+        .fa{
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px 0;
+            height: 70px;
+            outline: none;
+            background-color: rgb(230,230,230);
+        }
+        .yu{
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            width: 300px;
+            margin: 0 5px 0;
+            height: 70px;
+            outline: none;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: rgb(230,230,230); 
+        }
+        .f{
+            text-decoration: none;
+            font-size: 30px;
+            padding: 8px;
+            border-right: 1px solid #3c21d8;
+            border-radius: 100px;
+            color: #3c21d8;
+            display: flex;
+            align-items: center;
+            transition: all .6s ease-in-out;
+        }
+        .n{
+            padding: 10px;
+            font-size: 25px;
+            color: #3c21d8;
+            text-decoration: none;
+        }
+        .f:hover{
+            transition: all .3s ease-in-out;
+            border-radius: 3px;
+            color: #FFFFFF;
+            border: none;
+            background-color: #FF0000;
+        }
+        .footer{
+            list-style: square;
+            display: block;
+        }
+        .footer .fo{
+            padding: 5px;
+            font-size: 17px;
+            color: #FFFFFF;
+        }
+        .tfo{
+            color: #FFFFFF;
+            font-size: 17px;
+        }
+        .marq{
+            font-size: 15px;
+            color: rgb(250,250,250);
+            padding: 0 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="contenu">
+            <header>
+                <input type="checkbox" name="checkbtn" id="checkbtn">
+                <label for="checkbtn" class="btn"><i class="ri-menu-fill"></i></label>
+                <div class="logo">
+                    <img src="logo.jpg" width="55px" height="50px">
+                    <a href="" class="mon_titre">ccdc<span class="tv">guide online</span></a>
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="">Opportunités</a></li>
+                    </ul>
+                </div>
+                    <div class="lien">
+                        <a href="" class="in">s'inscrire</a>
+                        <a href="" class="updates">updates</a>
+                    </div>
+            </header>
+        <main>
+            <div class="up">
+                <h1 class="titre">ccdc</h1>
+                <h4 class="sub-titre">Une communauté, un groupe, une histoire, un avenir.</h4>
+                <p class="text">Rejoingnez nous et profitez de pleines de bonnes choses</p>
+                <div  class="i">
+                    <a href="mailto:calavizodemin@gmail.com" class="contact">contacter nous</a>
+                </div>
+            </div>
+
+            <div class="down">
+                <div class="left">
+                    <h3 class="titre-down">Devenez membre & Participer</h3>
+                    <p class="text-down">Le scoutisme c'est notre première Opportunité<br>Nous formons les jeunes et les adultes. Il est temps de nous surprendre de vos capacités physiques, morales et spirituelles.</p>
+                <div class="r">
+                    <h4 class="nom">M.Jadis (cc)</h4>
+                    <p class="tel">Message/Appel: +221 77 293 7441</p>
+                    <p class="tel">WhatsApp: +242 06 802 22 99</p>
+                    <p class="mail">madridesoussou@yhaoo.com</p>
+                </div>
+                </div>
+                <div class="right">
+                    <h2 class="scene">Promesse scoute du samedi 22 juillet 2023</h2>
+                    <div class="vidmate">
+                        <video src="videoPub.mp4" loop controls>
+                            <source type="video.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div id="slider">
+                <figure>
+                    <img src="slide-5.jpg" >
+                    <img src="slide-2.jpg" >
+                    <img src="slide-3.jpg" >
+                    <img src="slide-4.jpg" >
+                    <img src="slide-1.jpg" >
+                </figure>
+            </div>
+            <div class="folow">
+                <h2 class="fw">Nous suivre sur ces deux réseaux sociaux</h2>
+                <div class="flex">
+                    <button type="button" class="fa">
+                        <a href="" class="f"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="" class="n">Facebook</a>
+                    </button>
+                    <button type="button" class="yu">
+                        <a href="" class="f"><i class="ri-youtube-fill"></i></a>
+                        <a href="" class="n">Youtube</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul class="footer" type=square>
+                <li class="fo">Congo Pointe-Noire</li>
+                <li class="fo">Bénin Porto-novo</li>
+                <p class="tfo">+242 06 763 53 76 & +229 96 58 30 56</p>
+            </ul>
+            <span class="marq">&#169 ccdc copyright2023 By Coolskin Vercla</span>
+        </footer>
+        </div>
+    </body>
+</html>

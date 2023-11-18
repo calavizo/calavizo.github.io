@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* debut du style css pour header */
+header{
+    display: block;
+    width: 100%;
+    max-height: 115px;
+    background: #FFF;
+    border-bottom: 1.7px solid rgba(242,242,242);
+}
+.DIV-UP{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+}
+.LOGO, .COMPTE{
+    display: flex;
+    align-items: center;
+}
+.LOGO img{
+    justify-content: center;
+}
+.COMPTE #user{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: #303030;
+}
+.NAVIGATION{
+    justify-content: left;
+    padding: 5px 12px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.NAVIGATION li{
+    padding: 0 20px;
+}
+.NAVIGATION li #ITM-notification, #ITM-document, #ITM-evenement, #ITM-rapport, #ITM-membre{
+    text-decoration: none;
+    color: #303030;
+    padding: 5px 0;
+}
+.NAVIGATION li #ITM-notification{
+    border-bottom: 1.5px solid rgb(255, 128, 0);
+}
+.NAVIGATION li #ITM-notification, #ITM-document:hover, #ITM-evenement:hover, #ITM-rapport:hover, #ITM-membre:hover{
+    border-bottom: 1.5px solid rgb(255, 128, 0);
+}
+/* debut du style css pour main */
+main{
+    width: 100%;
+    height: auto;
+    display: block;
+    background: rgba(250,250,250);
+}
+#slider{
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    max-height: 100vh;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    position: static;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.DIV-CONTACT{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+}
+.DIV-PROPOS, .DIV-COORDONNEE{
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+}
+.DIV-PROPOS h4, .DIV-COORDONNEE h4{
+    padding: 20px 0;
+    color: #303030;
+    font-size: 30px;
+}
+.DIV-PROPOS p{
+    color: #303030;
+    text-align: justify;
+}
+.DIV-COORDONNEE p{
+    padding: 12px 0;color: #303030;
+}
+
+/* debut du style css de footer */
+footer{
+    width: 100%;
+    height: 60px;
+    border-top: 1.7px solid rgba(242,242,242);
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+    background: #FFF;
+    justify-content: center;
+}
+footer #itm-info, #itm-rgc, #itm-mvr, #itm-tr{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #303030;
+}
+footer #itm-info{
+    font-weight: 600;
+}
+footer #itm-info:hover, #itm-rgc:hover, #itm-mvr:hover, #itm-tr:hover{
+    color: #505050;
+}
+
+@media(max-width: 720px){
+    #slider figure img{
+        position: static;
+    }
+    header{
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        position: sticky;
+    }
+    .DIV-UP{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .NAVIGATION{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+        height: auto;
+    }
+    .NAVIGATION li{
+        padding: 0 5px;
+    }
+    .DIV-CONTACT{
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+        padding: 20px 10px;
+    }
+    .DIV-PROPOS{
+        border-radius: 5px;
+        background: #FFF;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .DIV-COORDONNEE{
+        border-radius: 5px;
+        background: #FFF;
+        width: 100%;
+    }
+    footer{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    footer #itm-info, #itm-rgc, #itm-mvr, #itm-tr{
+        display: block;
+    }
+}
